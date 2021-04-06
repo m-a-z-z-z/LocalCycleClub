@@ -172,7 +172,7 @@ namespace LocalCycleClub
             this.txtBoxAnnouncements.Name = "txtBoxAnnouncements";
             this.txtBoxAnnouncements.Size = new System.Drawing.Size(330, 437);
             this.txtBoxAnnouncements.TabIndex = 2;
-            this.txtBoxAnnouncements.Text = "Daniel loves michael jordans cock in his bum";
+            this.txtBoxAnnouncements.Text = "DANIEL HAS A MASSIVE COCK  ";
             // 
             // label1
             // 
