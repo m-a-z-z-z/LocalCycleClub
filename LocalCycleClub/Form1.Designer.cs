@@ -126,7 +126,7 @@ namespace LocalCycleClub
             // 
             this.richTextBox1.Location = new System.Drawing.Point(6, 56);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(330, 440);
+            this.richTextBox1.Size = new System.Drawing.Size(330, 437);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
             // 
