@@ -31,6 +31,7 @@ namespace LocalCycleClub
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBoxLogin = new System.Windows.Forms.GroupBox();
             this.btnForgotPassword = new System.Windows.Forms.Button();
@@ -45,11 +46,10 @@ namespace LocalCycleClub
             this.tabLeaderboard = new System.Windows.Forms.TabPage();
             this.tabProfile = new System.Windows.Forms.TabPage();
             this.tabSignup = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
-            this.groupBoxLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBoxLogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -79,6 +79,15 @@ namespace LocalCycleClub
             this.tabHome.TabIndex = 0;
             this.tabHome.Text = "Home";
             this.tabHome.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LocalCycleClub.Properties.Resources.lanceondrugs__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(378, 219);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(221, 274);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
@@ -163,7 +172,7 @@ namespace LocalCycleClub
             this.txtBoxAnnouncements.Name = "txtBoxAnnouncements";
             this.txtBoxAnnouncements.Size = new System.Drawing.Size(330, 437);
             this.txtBoxAnnouncements.TabIndex = 2;
-            this.txtBoxAnnouncements.Text = "";
+            this.txtBoxAnnouncements.Text = "Daniel loves michael jordans cock in his bum";
             // 
             // label1
             // 
@@ -212,15 +221,6 @@ namespace LocalCycleClub
             this.tabSignup.Text = "Sign Up";
             this.tabSignup.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::LocalCycleClub.Properties.Resources.lanceondrugs__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(378, 219);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(221, 274);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -233,9 +233,9 @@ namespace LocalCycleClub
             this.tabControl1.ResumeLayout(false);
             this.tabHome.ResumeLayout(false);
             this.tabHome.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxLogin.ResumeLayout(false);
             this.groupBoxLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
