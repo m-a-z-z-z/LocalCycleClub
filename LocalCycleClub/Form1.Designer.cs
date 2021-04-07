@@ -44,15 +44,15 @@ namespace LocalCycleClub
             this.label1 = new System.Windows.Forms.Label();
             this.tabActivities = new System.Windows.Forms.TabPage();
             this.tabLeaderboard = new System.Windows.Forms.TabPage();
-            this.tabProfile = new System.Windows.Forms.TabPage();
-            this.tabSignup = new System.Windows.Forms.TabPage();
-            this.label5 = new System.Windows.Forms.Label();
+            this.cbDTP = new System.Windows.Forms.ComboBox();
+            this.btnAddCycle = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cyclesTaken = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.DistanceCycled = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnAddCycle = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tabProfile = new System.Windows.Forms.TabPage();
+            this.tabSignup = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -204,7 +204,7 @@ namespace LocalCycleClub
             // 
             // tabLeaderboard
             // 
-            this.tabLeaderboard.Controls.Add(this.comboBox1);
+            this.tabLeaderboard.Controls.Add(this.cbDTP);
             this.tabLeaderboard.Controls.Add(this.btnAddCycle);
             this.tabLeaderboard.Controls.Add(this.listView1);
             this.tabLeaderboard.Controls.Add(this.label5);
@@ -215,34 +215,24 @@ namespace LocalCycleClub
             this.tabLeaderboard.Text = "Leaderboard";
             this.tabLeaderboard.UseVisualStyleBackColor = true;
             // 
-            // tabProfile
+            // cbDTP
             // 
-            this.tabProfile.Location = new System.Drawing.Point(4, 25);
-            this.tabProfile.Name = "tabProfile";
-            this.tabProfile.Size = new System.Drawing.Size(768, 499);
-            this.tabProfile.TabIndex = 3;
-            this.tabProfile.Text = "Profile";
-            this.tabProfile.UseVisualStyleBackColor = true;
+            this.cbDTP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDTP.FormattingEnabled = true;
+            this.cbDTP.Location = new System.Drawing.Point(41, 132);
+            this.cbDTP.Name = "cbDTP";
+            this.cbDTP.Size = new System.Drawing.Size(121, 24);
+            this.cbDTP.TabIndex = 3;
+            this.cbDTP.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // tabSignup
+            // btnAddCycle
             // 
-            this.tabSignup.Location = new System.Drawing.Point(4, 25);
-            this.tabSignup.Name = "tabSignup";
-            this.tabSignup.Size = new System.Drawing.Size(768, 499);
-            this.tabSignup.TabIndex = 4;
-            this.tabSignup.Text = "Sign Up";
-            this.tabSignup.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(281, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(188, 32);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Leaderboard";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.btnAddCycle.Location = new System.Drawing.Point(74, 274);
+            this.btnAddCycle.Name = "btnAddCycle";
+            this.btnAddCycle.Size = new System.Drawing.Size(97, 49);
+            this.btnAddCycle.TabIndex = 2;
+            this.btnAddCycle.Text = "Add Cycle";
+            this.btnAddCycle.UseVisualStyleBackColor = true;
             // 
             // listView1
             // 
@@ -273,24 +263,34 @@ namespace LocalCycleClub
             this.DistanceCycled.Text = "Distance Cycled";
             this.DistanceCycled.Width = 145;
             // 
-            // btnAddCycle
+            // label5
             // 
-            this.btnAddCycle.Location = new System.Drawing.Point(74, 274);
-            this.btnAddCycle.Name = "btnAddCycle";
-            this.btnAddCycle.Size = new System.Drawing.Size(97, 49);
-            this.btnAddCycle.TabIndex = 2;
-            this.btnAddCycle.Text = "Add Cycle";
-            this.btnAddCycle.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(281, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(188, 32);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Leaderboard";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // comboBox1
+            // tabProfile
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(41, 132);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 3;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.tabProfile.Location = new System.Drawing.Point(4, 25);
+            this.tabProfile.Name = "tabProfile";
+            this.tabProfile.Size = new System.Drawing.Size(768, 499);
+            this.tabProfile.TabIndex = 3;
+            this.tabProfile.Text = "Profile";
+            this.tabProfile.UseVisualStyleBackColor = true;
+            // 
+            // tabSignup
+            // 
+            this.tabSignup.Location = new System.Drawing.Point(4, 25);
+            this.tabSignup.Name = "tabSignup";
+            this.tabSignup.Size = new System.Drawing.Size(768, 499);
+            this.tabSignup.TabIndex = 4;
+            this.tabSignup.Text = "Sign Up";
+            this.tabSignup.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -338,7 +338,7 @@ namespace LocalCycleClub
         private System.Windows.Forms.ColumnHeader name;
         private System.Windows.Forms.ColumnHeader cyclesTaken;
         private System.Windows.Forms.ColumnHeader DistanceCycled;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbDTP;
     }
 }
 
