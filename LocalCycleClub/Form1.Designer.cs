@@ -29,9 +29,13 @@ namespace LocalCycleClub
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Caught Cheating",
+            "Got caught cheating"}, 0);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBoxLogin = new System.Windows.Forms.GroupBox();
             this.btnForgotPassword = new System.Windows.Forms.Button();
@@ -53,6 +57,7 @@ namespace LocalCycleClub
             this.label5 = new System.Windows.Forms.Label();
             this.tabProfile = new System.Windows.Forms.TabPage();
             this.tabSignup = new System.Windows.Forms.TabPage();
+            this.label14 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.dobPicker = new System.Windows.Forms.DateTimePicker();
@@ -71,13 +76,25 @@ namespace LocalCycleClub
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.grpBoxAchievementsUnlckd = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.achievementsIcons = new System.Windows.Forms.ImageList(this.components);
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.lblKMCycled = new System.Windows.Forms.Label();
+            this.lblClubRanking = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxLogin.SuspendLayout();
             this.tabLeaderboard.SuspendLayout();
+            this.tabProfile.SuspendLayout();
             this.tabSignup.SuspendLayout();
+            this.grpBoxAchievementsUnlckd.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -107,15 +124,6 @@ namespace LocalCycleClub
             this.tabHome.TabIndex = 0;
             this.tabHome.Text = "Home";
             this.tabHome.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::LocalCycleClub.Properties.Resources.lanceondrugs__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(378, 219);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(221, 274);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
@@ -299,6 +307,13 @@ namespace LocalCycleClub
             // 
             // tabProfile
             // 
+            this.tabProfile.Controls.Add(this.lblClubRanking);
+            this.tabProfile.Controls.Add(this.lblKMCycled);
+            this.tabProfile.Controls.Add(this.label17);
+            this.tabProfile.Controls.Add(this.label16);
+            this.tabProfile.Controls.Add(this.pictureBox2);
+            this.tabProfile.Controls.Add(this.grpBoxAchievementsUnlckd);
+            this.tabProfile.Controls.Add(this.lblUsername);
             this.tabProfile.Location = new System.Drawing.Point(4, 25);
             this.tabProfile.Name = "tabProfile";
             this.tabProfile.Size = new System.Drawing.Size(768, 499);
@@ -333,6 +348,16 @@ namespace LocalCycleClub
             this.tabSignup.TabIndex = 4;
             this.tabSignup.Text = "Sign Up";
             this.tabSignup.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(209, 145);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(85, 25);
+            this.label14.TabIndex = 20;
+            this.label14.Text = "Address";
             // 
             // btnSubmit
             // 
@@ -488,15 +513,103 @@ namespace LocalCycleClub
             this.label6.TabIndex = 0;
             this.label6.Text = "Username";
             // 
-            // label14
+            // lblUsername
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(209, 145);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(85, 25);
-            this.label14.TabIndex = 20;
-            this.label14.Text = "Address";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(93, 22);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(174, 39);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "Username";
+            // 
+            // grpBoxAchievementsUnlckd
+            // 
+            this.grpBoxAchievementsUnlckd.Controls.Add(this.listView2);
+            this.grpBoxAchievementsUnlckd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpBoxAchievementsUnlckd.Location = new System.Drawing.Point(383, 31);
+            this.grpBoxAchievementsUnlckd.Name = "grpBoxAchievementsUnlckd";
+            this.grpBoxAchievementsUnlckd.Size = new System.Drawing.Size(355, 433);
+            this.grpBoxAchievementsUnlckd.TabIndex = 1;
+            this.grpBoxAchievementsUnlckd.TabStop = false;
+            this.grpBoxAchievementsUnlckd.Text = "Achievements Unlocked";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LocalCycleClub.Properties.Resources.lanceondrugs__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(378, 219);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(221, 274);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::LocalCycleClub.Properties.Resources.profilepic;
+            this.pictureBox2.Location = new System.Drawing.Point(57, 64);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(257, 258);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(58, 353);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(112, 18);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Km\'s Cycled: ";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(54, 399);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(113, 18);
+            this.label17.TabIndex = 4;
+            this.label17.Text = "Club Ranking:";
+            // 
+            // achievementsIcons
+            // 
+            this.achievementsIcons.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("achievementsIcons.ImageStream")));
+            this.achievementsIcons.TransparentColor = System.Drawing.Color.Transparent;
+            this.achievementsIcons.Images.SetKeyName(0, "oops.jpg");
+            // 
+            // listView2
+            // 
+            this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView2.HideSelection = false;
+            listViewItem1.Tag = "Oops";
+            this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
+            this.listView2.LargeImageList = this.achievementsIcons;
+            this.listView2.Location = new System.Drawing.Point(3, 20);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(349, 410);
+            this.listView2.SmallImageList = this.achievementsIcons;
+            this.listView2.TabIndex = 0;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            // 
+            // lblKMCycled
+            // 
+            this.lblKMCycled.AutoSize = true;
+            this.lblKMCycled.Location = new System.Drawing.Point(177, 353);
+            this.lblKMCycled.Name = "lblKMCycled";
+            this.lblKMCycled.Size = new System.Drawing.Size(40, 17);
+            this.lblKMCycled.TabIndex = 5;
+            this.lblKMCycled.Text = "0 Km";
+            // 
+            // lblClubRanking
+            // 
+            this.lblClubRanking.AutoSize = true;
+            this.lblClubRanking.Location = new System.Drawing.Point(177, 401);
+            this.lblClubRanking.Name = "lblClubRanking";
+            this.lblClubRanking.Size = new System.Drawing.Size(16, 17);
+            this.lblClubRanking.TabIndex = 6;
+            this.lblClubRanking.Text = "0";
             // 
             // Form1
             // 
@@ -510,13 +623,17 @@ namespace LocalCycleClub
             this.tabControl1.ResumeLayout(false);
             this.tabHome.ResumeLayout(false);
             this.tabHome.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxLogin.ResumeLayout(false);
             this.groupBoxLogin.PerformLayout();
             this.tabLeaderboard.ResumeLayout(false);
             this.tabLeaderboard.PerformLayout();
+            this.tabProfile.ResumeLayout(false);
+            this.tabProfile.PerformLayout();
             this.tabSignup.ResumeLayout(false);
             this.tabSignup.PerformLayout();
+            this.grpBoxAchievementsUnlckd.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -566,6 +683,15 @@ namespace LocalCycleClub
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.GroupBox grpBoxAchievementsUnlckd;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblClubRanking;
+        private System.Windows.Forms.Label lblKMCycled;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ImageList achievementsIcons;
     }
 }
 
