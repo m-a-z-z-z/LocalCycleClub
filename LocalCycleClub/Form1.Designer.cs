@@ -72,10 +72,17 @@ namespace LocalCycleClub
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.AActivity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.AName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ALocation = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ADate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxLogin.SuspendLayout();
+            this.tabActivities.SuspendLayout();
             this.tabLeaderboard.SuspendLayout();
             this.tabSignup.SuspendLayout();
             this.SuspendLayout();
@@ -214,6 +221,8 @@ namespace LocalCycleClub
             // 
             // tabActivities
             // 
+            this.tabActivities.Controls.Add(this.button1);
+            this.tabActivities.Controls.Add(this.listView2);
             this.tabActivities.Location = new System.Drawing.Point(4, 25);
             this.tabActivities.Name = "tabActivities";
             this.tabActivities.Padding = new System.Windows.Forms.Padding(3);
@@ -498,6 +507,50 @@ namespace LocalCycleClub
             this.label14.TabIndex = 20;
             this.label14.Text = "Address";
             // 
+            // listView2
+            // 
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.AActivity,
+            this.AName,
+            this.ALocation,
+            this.ADate});
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(25, 82);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(518, 398);
+            this.listView2.TabIndex = 0;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
+            // 
+            // AActivity
+            // 
+            this.AActivity.Text = "Activity";
+            this.AActivity.Width = 130;
+            // 
+            // AName
+            // 
+            this.AName.Text = "Name";
+            this.AName.Width = 130;
+            // 
+            // ALocation
+            // 
+            this.ALocation.Text = "Location";
+            this.ALocation.Width = 125;
+            // 
+            // ADate
+            // 
+            this.ADate.Text = "Date";
+            this.ADate.Width = 130;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(599, 267);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 37);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Add Activity";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -513,6 +566,7 @@ namespace LocalCycleClub
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxLogin.ResumeLayout(false);
             this.groupBoxLogin.PerformLayout();
+            this.tabActivities.ResumeLayout(false);
             this.tabLeaderboard.ResumeLayout(false);
             this.tabLeaderboard.PerformLayout();
             this.tabSignup.ResumeLayout(false);
@@ -566,6 +620,12 @@ namespace LocalCycleClub
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ColumnHeader AActivity;
+        private System.Windows.Forms.ColumnHeader AName;
+        private System.Windows.Forms.ColumnHeader ALocation;
+        private System.Windows.Forms.ColumnHeader ADate;
     }
 }
 
