@@ -44,6 +44,7 @@ namespace LocalCycleClub
             this.label1 = new System.Windows.Forms.Label();
             this.tabActivities = new System.Windows.Forms.TabPage();
             this.tabLeaderboard = new System.Windows.Forms.TabPage();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.btnAddCycle = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -70,7 +71,6 @@ namespace LocalCycleClub
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -233,6 +233,19 @@ namespace LocalCycleClub
             this.tabLeaderboard.TabIndex = 2;
             this.tabLeaderboard.Text = "Leaderboard";
             this.tabLeaderboard.UseVisualStyleBackColor = true;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Day",
+            "Month",
+            "Year"});
+            this.comboBox2.Location = new System.Drawing.Point(54, 133);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(137, 24);
+            this.comboBox2.TabIndex = 3;
             // 
             // btnAddCycle
             // 
@@ -475,18 +488,6 @@ namespace LocalCycleClub
             this.label6.Size = new System.Drawing.Size(97, 24);
             this.label6.TabIndex = 0;
             this.label6.Text = "Username";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Day",
-            "Month",
-            "Year"});
-            this.comboBox2.Location = new System.Drawing.Point(54, 133);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(137, 24);
-            this.comboBox2.TabIndex = 3;
             // 
             // Form1
             // 
