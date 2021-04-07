@@ -44,19 +44,38 @@ namespace LocalCycleClub
             this.label1 = new System.Windows.Forms.Label();
             this.tabActivities = new System.Windows.Forms.TabPage();
             this.tabLeaderboard = new System.Windows.Forms.TabPage();
-            this.tabProfile = new System.Windows.Forms.TabPage();
-            this.tabSignup = new System.Windows.Forms.TabPage();
-            this.label5 = new System.Windows.Forms.Label();
+            this.btnAddCycle = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cyclesTaken = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.DistanceCycled = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnAddCycle = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tabProfile = new System.Windows.Forms.TabPage();
+            this.tabSignup = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxLogin.SuspendLayout();
             this.tabLeaderboard.SuspendLayout();
+            this.tabSignup.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -213,34 +232,14 @@ namespace LocalCycleClub
             this.tabLeaderboard.Text = "Leaderboard";
             this.tabLeaderboard.UseVisualStyleBackColor = true;
             // 
-            // tabProfile
+            // btnAddCycle
             // 
-            this.tabProfile.Location = new System.Drawing.Point(4, 25);
-            this.tabProfile.Name = "tabProfile";
-            this.tabProfile.Size = new System.Drawing.Size(768, 499);
-            this.tabProfile.TabIndex = 3;
-            this.tabProfile.Text = "Profile";
-            this.tabProfile.UseVisualStyleBackColor = true;
-            // 
-            // tabSignup
-            // 
-            this.tabSignup.Location = new System.Drawing.Point(4, 25);
-            this.tabSignup.Name = "tabSignup";
-            this.tabSignup.Size = new System.Drawing.Size(768, 499);
-            this.tabSignup.TabIndex = 4;
-            this.tabSignup.Text = "Sign Up";
-            this.tabSignup.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(281, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(188, 32);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Leaderboard";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.btnAddCycle.Location = new System.Drawing.Point(74, 274);
+            this.btnAddCycle.Name = "btnAddCycle";
+            this.btnAddCycle.Size = new System.Drawing.Size(97, 49);
+            this.btnAddCycle.TabIndex = 2;
+            this.btnAddCycle.Text = "Add Cycle";
+            this.btnAddCycle.UseVisualStyleBackColor = true;
             // 
             // listView1
             // 
@@ -271,14 +270,209 @@ namespace LocalCycleClub
             this.DistanceCycled.Text = "Distance Cycled";
             this.DistanceCycled.Width = 145;
             // 
-            // btnAddCycle
+            // label5
             // 
-            this.btnAddCycle.Location = new System.Drawing.Point(74, 274);
-            this.btnAddCycle.Name = "btnAddCycle";
-            this.btnAddCycle.Size = new System.Drawing.Size(97, 49);
-            this.btnAddCycle.TabIndex = 2;
-            this.btnAddCycle.Text = "Add Cycle";
-            this.btnAddCycle.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(281, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(188, 32);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Leaderboard";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // tabProfile
+            // 
+            this.tabProfile.Location = new System.Drawing.Point(4, 25);
+            this.tabProfile.Name = "tabProfile";
+            this.tabProfile.Size = new System.Drawing.Size(768, 499);
+            this.tabProfile.TabIndex = 3;
+            this.tabProfile.Text = "Profile";
+            this.tabProfile.UseVisualStyleBackColor = true;
+            // 
+            // tabSignup
+            // 
+            this.tabSignup.Controls.Add(this.button2);
+            this.tabSignup.Controls.Add(this.button1);
+            this.tabSignup.Controls.Add(this.dateTimePicker1);
+            this.tabSignup.Controls.Add(this.textBox6);
+            this.tabSignup.Controls.Add(this.textBox5);
+            this.tabSignup.Controls.Add(this.textBox3);
+            this.tabSignup.Controls.Add(this.textBox2);
+            this.tabSignup.Controls.Add(this.textBox1);
+            this.tabSignup.Controls.Add(this.richTextBox1);
+            this.tabSignup.Controls.Add(this.label13);
+            this.tabSignup.Controls.Add(this.comboBox1);
+            this.tabSignup.Controls.Add(this.label12);
+            this.tabSignup.Controls.Add(this.label11);
+            this.tabSignup.Controls.Add(this.label10);
+            this.tabSignup.Controls.Add(this.label9);
+            this.tabSignup.Controls.Add(this.label8);
+            this.tabSignup.Controls.Add(this.label7);
+            this.tabSignup.Controls.Add(this.label6);
+            this.tabSignup.Location = new System.Drawing.Point(4, 25);
+            this.tabSignup.Name = "tabSignup";
+            this.tabSignup.Size = new System.Drawing.Size(768, 499);
+            this.tabSignup.TabIndex = 4;
+            this.tabSignup.Text = "Sign Up";
+            this.tabSignup.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(198, 29);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(97, 24);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Username";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(198, 64);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(98, 24);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "First name";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(198, 101);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(96, 24);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Last name";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(238, 355);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(57, 24);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Email";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(205, 391);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(92, 24);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "Password";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(245, 317);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(50, 24);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "DOB";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(120, 272);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(175, 24);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "Cycling Experience";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(333, 272);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(242, 24);
+            this.comboBox1.TabIndex = 7;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(212, 144);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(80, 24);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "Address";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(333, 145);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(242, 97);
+            this.richTextBox1.TabIndex = 9;
+            this.richTextBox1.Text = "";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(333, 29);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(242, 22);
+            this.textBox1.TabIndex = 10;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(333, 64);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(242, 22);
+            this.textBox2.TabIndex = 11;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(333, 103);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(242, 22);
+            this.textBox3.TabIndex = 12;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(333, 355);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(242, 22);
+            this.textBox5.TabIndex = 14;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(333, 393);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(242, 22);
+            this.textBox6.TabIndex = 15;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(333, 317);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(242, 22);
+            this.dateTimePicker1.TabIndex = 16;
+            this.dateTimePicker1.Value = new System.DateTime(2021, 4, 7, 9, 41, 59, 0);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(333, 442);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Clear";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(500, 442);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Submit";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -297,6 +491,8 @@ namespace LocalCycleClub
             this.groupBoxLogin.PerformLayout();
             this.tabLeaderboard.ResumeLayout(false);
             this.tabLeaderboard.PerformLayout();
+            this.tabSignup.ResumeLayout(false);
+            this.tabSignup.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -326,6 +522,24 @@ namespace LocalCycleClub
         private System.Windows.Forms.ColumnHeader name;
         private System.Windows.Forms.ColumnHeader cyclesTaken;
         private System.Windows.Forms.ColumnHeader DistanceCycled;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
     }
 }
 
