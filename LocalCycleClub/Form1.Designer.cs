@@ -46,10 +46,17 @@ namespace LocalCycleClub
             this.tabLeaderboard = new System.Windows.Forms.TabPage();
             this.tabProfile = new System.Windows.Forms.TabPage();
             this.tabSignup = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cyclesTaken = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.DistanceCycled = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnAddCycle = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxLogin.SuspendLayout();
+            this.tabLeaderboard.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -196,6 +203,9 @@ namespace LocalCycleClub
             // 
             // tabLeaderboard
             // 
+            this.tabLeaderboard.Controls.Add(this.btnAddCycle);
+            this.tabLeaderboard.Controls.Add(this.listView1);
+            this.tabLeaderboard.Controls.Add(this.label5);
             this.tabLeaderboard.Location = new System.Drawing.Point(4, 25);
             this.tabLeaderboard.Name = "tabLeaderboard";
             this.tabLeaderboard.Size = new System.Drawing.Size(768, 499);
@@ -221,6 +231,55 @@ namespace LocalCycleClub
             this.tabSignup.Text = "Sign Up";
             this.tabSignup.UseVisualStyleBackColor = true;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(281, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(188, 32);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Leaderboard";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.name,
+            this.cyclesTaken,
+            this.DistanceCycled});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(233, 74);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(439, 390);
+            this.listView1.TabIndex = 1;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // name
+            // 
+            this.name.Text = "Name";
+            this.name.Width = 145;
+            // 
+            // cyclesTaken
+            // 
+            this.cyclesTaken.Text = "Cycles Taken";
+            this.cyclesTaken.Width = 145;
+            // 
+            // DistanceCycled
+            // 
+            this.DistanceCycled.Text = "Distance Cycled";
+            this.DistanceCycled.Width = 145;
+            // 
+            // btnAddCycle
+            // 
+            this.btnAddCycle.Location = new System.Drawing.Point(74, 274);
+            this.btnAddCycle.Name = "btnAddCycle";
+            this.btnAddCycle.Size = new System.Drawing.Size(97, 49);
+            this.btnAddCycle.TabIndex = 2;
+            this.btnAddCycle.Text = "Add Cycle";
+            this.btnAddCycle.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -236,6 +295,8 @@ namespace LocalCycleClub
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxLogin.ResumeLayout(false);
             this.groupBoxLogin.PerformLayout();
+            this.tabLeaderboard.ResumeLayout(false);
+            this.tabLeaderboard.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -259,6 +320,12 @@ namespace LocalCycleClub
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnAddCycle;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader name;
+        private System.Windows.Forms.ColumnHeader cyclesTaken;
+        private System.Windows.Forms.ColumnHeader DistanceCycled;
     }
 }
 
