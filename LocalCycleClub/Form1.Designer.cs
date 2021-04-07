@@ -52,6 +52,7 @@ namespace LocalCycleClub
             this.cyclesTaken = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.DistanceCycled = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnAddCycle = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -203,6 +204,7 @@ namespace LocalCycleClub
             // 
             // tabLeaderboard
             // 
+            this.tabLeaderboard.Controls.Add(this.comboBox1);
             this.tabLeaderboard.Controls.Add(this.btnAddCycle);
             this.tabLeaderboard.Controls.Add(this.listView1);
             this.tabLeaderboard.Controls.Add(this.label5);
@@ -280,6 +282,16 @@ namespace LocalCycleClub
             this.btnAddCycle.Text = "Add Cycle";
             this.btnAddCycle.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(41, 132);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 3;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -326,6 +338,7 @@ namespace LocalCycleClub
         private System.Windows.Forms.ColumnHeader name;
         private System.Windows.Forms.ColumnHeader cyclesTaken;
         private System.Windows.Forms.ColumnHeader DistanceCycled;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
