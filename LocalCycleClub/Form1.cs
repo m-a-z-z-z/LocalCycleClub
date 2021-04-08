@@ -26,5 +26,11 @@ namespace LocalCycleClub
         {
 
         }
+
+        private void btnAddActivities_Click(object sender, EventArgs e)
+        {
+            ActivitiesForm info = new ActivitiesForm();
+            info.Show();
+        }
     }
 }
