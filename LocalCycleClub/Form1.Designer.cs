@@ -29,17 +29,22 @@ namespace LocalCycleClub
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Caught Cheating",
+            "Got caught cheating"}, 0);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.heroOfTheMonthLbl = new System.Windows.Forms.Label();
             this.groupBoxLogin = new System.Windows.Forms.GroupBox();
             this.btnForgotPassword = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtBoxPassword = new System.Windows.Forms.TextBox();
             this.txtBoxUsername = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.passwordLoginLbl = new System.Windows.Forms.Label();
+            this.userNameLoginLbl = new System.Windows.Forms.Label();
             this.txtBoxAnnouncements = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabActivities = new System.Windows.Forms.TabPage();
@@ -59,6 +64,15 @@ namespace LocalCycleClub
             this.DistanceCycled = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label5 = new System.Windows.Forms.Label();
             this.tabProfile = new System.Windows.Forms.TabPage();
+            this.lblClubRanking = new System.Windows.Forms.Label();
+            this.lblKMCycled = new System.Windows.Forms.Label();
+            this.clubRankinglbl = new System.Windows.Forms.Label();
+            this.kmCycledlbl = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.grpBoxAchievementsUnlckd = new System.Windows.Forms.GroupBox();
+            this.achievementsListView = new System.Windows.Forms.ListView();
+            this.achievementsIcons = new System.Windows.Forms.ImageList(this.components);
+            this.lblUsername = new System.Windows.Forms.Label();
             this.tabSignup = new System.Windows.Forms.TabPage();
             this.label14 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
@@ -85,6 +99,9 @@ namespace LocalCycleClub
             this.groupBoxLogin.SuspendLayout();
             this.tabActivities.SuspendLayout();
             this.tabLeaderboard.SuspendLayout();
+            this.tabProfile.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.grpBoxAchievementsUnlckd.SuspendLayout();
             this.tabSignup.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,7 +121,7 @@ namespace LocalCycleClub
             // tabHome
             // 
             this.tabHome.Controls.Add(this.pictureBox1);
-            this.tabHome.Controls.Add(this.label4);
+            this.tabHome.Controls.Add(this.heroOfTheMonthLbl);
             this.tabHome.Controls.Add(this.groupBoxLogin);
             this.tabHome.Controls.Add(this.txtBoxAnnouncements);
             this.tabHome.Controls.Add(this.label1);
@@ -125,15 +142,15 @@ namespace LocalCycleClub
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // label4
+            // heroOfTheMonthLbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(603, 293);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(169, 72);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Hero of the \r\n    Month";
+            this.heroOfTheMonthLbl.AutoSize = true;
+            this.heroOfTheMonthLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.heroOfTheMonthLbl.Location = new System.Drawing.Point(603, 293);
+            this.heroOfTheMonthLbl.Name = "heroOfTheMonthLbl";
+            this.heroOfTheMonthLbl.Size = new System.Drawing.Size(169, 72);
+            this.heroOfTheMonthLbl.TabIndex = 4;
+            this.heroOfTheMonthLbl.Text = "Hero of the \r\n    Month";
             // 
             // groupBoxLogin
             // 
@@ -141,8 +158,8 @@ namespace LocalCycleClub
             this.groupBoxLogin.Controls.Add(this.btnLogin);
             this.groupBoxLogin.Controls.Add(this.txtBoxPassword);
             this.groupBoxLogin.Controls.Add(this.txtBoxUsername);
-            this.groupBoxLogin.Controls.Add(this.label3);
-            this.groupBoxLogin.Controls.Add(this.label2);
+            this.groupBoxLogin.Controls.Add(this.passwordLoginLbl);
+            this.groupBoxLogin.Controls.Add(this.userNameLoginLbl);
             this.groupBoxLogin.Location = new System.Drawing.Point(378, 43);
             this.groupBoxLogin.Name = "groupBoxLogin";
             this.groupBoxLogin.Size = new System.Drawing.Size(350, 170);
@@ -182,25 +199,26 @@ namespace LocalCycleClub
             this.txtBoxUsername.Size = new System.Drawing.Size(187, 22);
             this.txtBoxUsername.TabIndex = 2;
             // 
-            // label3
+            // passwordLoginLbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(20, 78);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 25);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Password";
+            this.passwordLoginLbl.AutoSize = true;
+            this.passwordLoginLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLoginLbl.Location = new System.Drawing.Point(20, 78);
+            this.passwordLoginLbl.Name = "passwordLoginLbl";
+            this.passwordLoginLbl.Size = new System.Drawing.Size(98, 25);
+            this.passwordLoginLbl.TabIndex = 1;
+            this.passwordLoginLbl.Text = "Password";
             // 
-            // label2
+            // userNameLoginLbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(20, 38);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 25);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Username";
+            this.userNameLoginLbl.AccessibleDescription = "";
+            this.userNameLoginLbl.AutoSize = true;
+            this.userNameLoginLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userNameLoginLbl.Location = new System.Drawing.Point(20, 38);
+            this.userNameLoginLbl.Name = "userNameLoginLbl";
+            this.userNameLoginLbl.Size = new System.Drawing.Size(102, 25);
+            this.userNameLoginLbl.TabIndex = 0;
+            this.userNameLoginLbl.Text = "Username";
             // 
             // txtBoxAnnouncements
             // 
@@ -365,12 +383,109 @@ namespace LocalCycleClub
             // 
             // tabProfile
             // 
+            this.tabProfile.Controls.Add(this.lblClubRanking);
+            this.tabProfile.Controls.Add(this.lblKMCycled);
+            this.tabProfile.Controls.Add(this.clubRankinglbl);
+            this.tabProfile.Controls.Add(this.kmCycledlbl);
+            this.tabProfile.Controls.Add(this.pictureBox2);
+            this.tabProfile.Controls.Add(this.grpBoxAchievementsUnlckd);
+            this.tabProfile.Controls.Add(this.lblUsername);
             this.tabProfile.Location = new System.Drawing.Point(4, 25);
             this.tabProfile.Name = "tabProfile";
             this.tabProfile.Size = new System.Drawing.Size(768, 499);
             this.tabProfile.TabIndex = 3;
             this.tabProfile.Text = "Profile";
             this.tabProfile.UseVisualStyleBackColor = true;
+            // 
+            // lblClubRanking
+            // 
+            this.lblClubRanking.AutoSize = true;
+            this.lblClubRanking.Location = new System.Drawing.Point(177, 401);
+            this.lblClubRanking.Name = "lblClubRanking";
+            this.lblClubRanking.Size = new System.Drawing.Size(16, 17);
+            this.lblClubRanking.TabIndex = 6;
+            this.lblClubRanking.Text = "0";
+            // 
+            // lblKMCycled
+            // 
+            this.lblKMCycled.AutoSize = true;
+            this.lblKMCycled.Location = new System.Drawing.Point(177, 353);
+            this.lblKMCycled.Name = "lblKMCycled";
+            this.lblKMCycled.Size = new System.Drawing.Size(40, 17);
+            this.lblKMCycled.TabIndex = 5;
+            this.lblKMCycled.Text = "0 Km";
+            // 
+            // clubRankinglbl
+            // 
+            this.clubRankinglbl.AutoSize = true;
+            this.clubRankinglbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clubRankinglbl.Location = new System.Drawing.Point(54, 399);
+            this.clubRankinglbl.Name = "clubRankinglbl";
+            this.clubRankinglbl.Size = new System.Drawing.Size(113, 18);
+            this.clubRankinglbl.TabIndex = 4;
+            this.clubRankinglbl.Text = "Club Ranking:";
+            // 
+            // kmCycledlbl
+            // 
+            this.kmCycledlbl.AutoSize = true;
+            this.kmCycledlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kmCycledlbl.Location = new System.Drawing.Point(58, 353);
+            this.kmCycledlbl.Name = "kmCycledlbl";
+            this.kmCycledlbl.Size = new System.Drawing.Size(112, 18);
+            this.kmCycledlbl.TabIndex = 3;
+            this.kmCycledlbl.Text = "Km\'s Cycled: ";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::LocalCycleClub.Properties.Resources.profilepic;
+            this.pictureBox2.Location = new System.Drawing.Point(57, 64);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(257, 258);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // grpBoxAchievementsUnlckd
+            // 
+            this.grpBoxAchievementsUnlckd.Controls.Add(this.achievementsListView);
+            this.grpBoxAchievementsUnlckd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpBoxAchievementsUnlckd.Location = new System.Drawing.Point(383, 31);
+            this.grpBoxAchievementsUnlckd.Name = "grpBoxAchievementsUnlckd";
+            this.grpBoxAchievementsUnlckd.Size = new System.Drawing.Size(355, 433);
+            this.grpBoxAchievementsUnlckd.TabIndex = 1;
+            this.grpBoxAchievementsUnlckd.TabStop = false;
+            this.grpBoxAchievementsUnlckd.Text = "Achievements Unlocked";
+            // 
+            // achievementsListView
+            // 
+            this.achievementsListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.achievementsListView.HideSelection = false;
+            listViewItem1.Tag = "Oops";
+            this.achievementsListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
+            this.achievementsListView.LargeImageList = this.achievementsIcons;
+            this.achievementsListView.Location = new System.Drawing.Point(3, 20);
+            this.achievementsListView.Name = "achievementsListView";
+            this.achievementsListView.Size = new System.Drawing.Size(349, 410);
+            this.achievementsListView.SmallImageList = this.achievementsIcons;
+            this.achievementsListView.TabIndex = 0;
+            this.achievementsListView.UseCompatibleStateImageBehavior = false;
+            this.achievementsListView.View = System.Windows.Forms.View.Details;
+            // 
+            // achievementsIcons
+            // 
+            this.achievementsIcons.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("achievementsIcons.ImageStream")));
+            this.achievementsIcons.TransparentColor = System.Drawing.Color.Transparent;
+            this.achievementsIcons.Images.SetKeyName(0, "oops.jpg");
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(93, 22);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(168, 38);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "Username";
             // 
             // tabSignup
             // 
@@ -583,6 +698,10 @@ namespace LocalCycleClub
             this.tabActivities.PerformLayout();
             this.tabLeaderboard.ResumeLayout(false);
             this.tabLeaderboard.PerformLayout();
+            this.tabProfile.ResumeLayout(false);
+            this.tabProfile.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.grpBoxAchievementsUnlckd.ResumeLayout(false);
             this.tabSignup.ResumeLayout(false);
             this.tabSignup.PerformLayout();
             this.ResumeLayout(false);
@@ -604,9 +723,9 @@ namespace LocalCycleClub
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtBoxPassword;
         private System.Windows.Forms.TextBox txtBoxUsername;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label passwordLoginLbl;
+        private System.Windows.Forms.Label userNameLoginLbl;
+        private System.Windows.Forms.Label heroOfTheMonthLbl;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnAddCycle;
@@ -641,6 +760,15 @@ namespace LocalCycleClub
         private System.Windows.Forms.ColumnHeader ALocation;
         private System.Windows.Forms.ColumnHeader ADate;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.GroupBox grpBoxAchievementsUnlckd;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblClubRanking;
+        private System.Windows.Forms.Label lblKMCycled;
+        private System.Windows.Forms.Label clubRankinglbl;
+        private System.Windows.Forms.Label kmCycledlbl;
+        private System.Windows.Forms.ListView achievementsListView;
+        private System.Windows.Forms.ImageList achievementsIcons;
     }
 }
 
