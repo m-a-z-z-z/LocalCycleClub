@@ -47,6 +47,12 @@ namespace LocalCycleClub
             this.txtBoxAnnouncements = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabActivities = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.AActivity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.AName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ALocation = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ADate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabLeaderboard = new System.Windows.Forms.TabPage();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.btnAddCycle = new System.Windows.Forms.Button();
@@ -229,6 +235,50 @@ namespace LocalCycleClub
             this.tabActivities.TabIndex = 1;
             this.tabActivities.Text = "Activities";
             this.tabActivities.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(599, 267);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 37);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Add Activity";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // listView2
+            // 
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.AActivity,
+            this.AName,
+            this.ALocation,
+            this.ADate});
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(25, 82);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(518, 398);
+            this.listView2.TabIndex = 0;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
+            // 
+            // AActivity
+            // 
+            this.AActivity.Text = "Activity";
+            this.AActivity.Width = 130;
+            // 
+            // AName
+            // 
+            this.AName.Text = "Name";
+            this.AName.Width = 130;
+            // 
+            // ALocation
+            // 
+            this.ALocation.Text = "Location";
+            this.ALocation.Width = 125;
+            // 
+            // ADate
+            // 
+            this.ADate.Text = "Date";
+            this.ADate.Width = 130;
             // 
             // tabLeaderboard
             // 
