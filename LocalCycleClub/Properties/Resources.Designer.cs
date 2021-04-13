@@ -63,6 +63,16 @@ namespace LocalCycleClub.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CLT {
+            get {
+                object obj = ResourceManager.GetObject("CLT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lanceondrugs {
             get {
                 object obj = ResourceManager.GetObject("lanceondrugs", resourceCulture);

@@ -96,5 +96,8 @@
   <ItemGroup>
     <None Include="Resources\profilepic.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLT.jfif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
