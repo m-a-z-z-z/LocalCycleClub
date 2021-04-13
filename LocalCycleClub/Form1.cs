@@ -12,6 +12,8 @@ namespace LocalCycleClub
 {
     public partial class Form1 : Form
     {
+        Member member;
+
         public Form1()
         {
             InitializeComponent();
@@ -31,6 +33,11 @@ namespace LocalCycleClub
         {
             ActivitiesForm info = new ActivitiesForm();
             info.Show();
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

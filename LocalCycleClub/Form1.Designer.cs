@@ -533,6 +533,7 @@ namespace LocalCycleClub
             this.btnSubmit.TabIndex = 18;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // btnClear
             // 
