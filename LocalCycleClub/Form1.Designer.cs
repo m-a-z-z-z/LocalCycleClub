@@ -30,7 +30,7 @@ namespace LocalCycleClub
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "Caught Cheating",
             "Got caught cheating"}, 0);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
@@ -321,14 +321,14 @@ namespace LocalCycleClub
             "Day",
             "Month",
             "Year"});
-            this.comboBox2.Location = new System.Drawing.Point(33, 293);
+            this.comboBox2.Location = new System.Drawing.Point(66, 293);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(137, 24);
             this.comboBox2.TabIndex = 3;
             // 
             // btnAddCycle
             // 
-            this.btnAddCycle.Location = new System.Drawing.Point(53, 415);
+            this.btnAddCycle.Location = new System.Drawing.Point(85, 415);
             this.btnAddCycle.Name = "btnAddCycle";
             this.btnAddCycle.Size = new System.Drawing.Size(97, 49);
             this.btnAddCycle.TabIndex = 2;
@@ -342,9 +342,9 @@ namespace LocalCycleClub
             this.cyclesTaken,
             this.DistanceCycled});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(274, 74);
+            this.listView1.Location = new System.Drawing.Point(247, 74);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(439, 390);
+            this.listView1.Size = new System.Drawing.Size(502, 390);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -444,9 +444,9 @@ namespace LocalCycleClub
             // 
             this.achievementsListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.achievementsListView.HideSelection = false;
-            listViewItem1.Tag = "Oops";
+            listViewItem2.Tag = "Oops";
             this.achievementsListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem2});
             this.achievementsListView.LargeImageList = this.achievementsIcons;
             this.achievementsListView.Location = new System.Drawing.Point(3, 20);
             this.achievementsListView.Name = "achievementsListView";
@@ -676,7 +676,7 @@ namespace LocalCycleClub
             // pbTrophy
             // 
             this.pbTrophy.Image = global::LocalCycleClub.Properties.Resources.CLT;
-            this.pbTrophy.Location = new System.Drawing.Point(16, 16);
+            this.pbTrophy.Location = new System.Drawing.Point(33, 16);
             this.pbTrophy.Name = "pbTrophy";
             this.pbTrophy.Size = new System.Drawing.Size(195, 262);
             this.pbTrophy.TabIndex = 4;
