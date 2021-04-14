@@ -37,7 +37,23 @@ namespace LocalCycleClub
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            string username, fname, lname, email, pass, address, exp;
+            DateTime dob;
+            username = txtBoxSUUsername.Text;
+            fname = txtBoxFirstName.Text;
+            lname = txtBoxLastname.Text;
+            email = txtBoxEmail.Text;
+            pass = txtBoxPassword.Text;
+            dob = dobPicker.Value;
+            address = txtBoxAddress.Text;
+            exp = cyclingXPBox.Text;
 
+            AddMember(username, fname, lname, email, pass, dob, address, exp);
+        }
+
+        private void AddMember(String UserName, String FirstName, String LastName, String Email, String PassWord, DateTime DoB, String Address, String CyclingXP)
+        {
+            Member m = new Member(UserName, FirstName, LastName, Email, PassWord, DoB, Address, CyclingXP);
         }
     }
 }

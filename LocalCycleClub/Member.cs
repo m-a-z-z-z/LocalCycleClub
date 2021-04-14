@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LocalCycleClub
 {
-    class Member
+    public class Member
     {
         string Username { get; set; }
         string FirstName { get; set; }
@@ -27,6 +27,10 @@ namespace LocalCycleClub
             this.DOB = dob;
             this.Address = address;
             this.CyclingExperience = cycExp;
+        }
+        public Member()
+        {
+
         }
     }
 }

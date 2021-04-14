@@ -226,7 +226,8 @@ namespace LocalCycleClub
             this.txtBoxAnnouncements.Name = "txtBoxAnnouncements";
             this.txtBoxAnnouncements.Size = new System.Drawing.Size(330, 437);
             this.txtBoxAnnouncements.TabIndex = 2;
-            this.txtBoxAnnouncements.Text = "DANIEL HAS A MASSIVE COCK  AND THATS FAXXX";
+            this.txtBoxAnnouncements.Text = "• Daniel busted for steroid abuse and banned from club.\nWas caught drinking Micha" +
+    "el Jordans special stuff.\n";
             // 
             // label1
             // 
