@@ -31,7 +31,6 @@ namespace LocalCycleClub
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBoxLogin = new System.Windows.Forms.GroupBox();
             this.btnForgotPassword = new System.Windows.Forms.Button();
@@ -53,11 +52,14 @@ namespace LocalCycleClub
             this.label5 = new System.Windows.Forms.Label();
             this.tabProfile = new System.Windows.Forms.TabPage();
             this.tabSignup = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxLogin.SuspendLayout();
             this.tabLeaderboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -87,15 +89,6 @@ namespace LocalCycleClub
             this.tabHome.TabIndex = 0;
             this.tabHome.Text = "Home";
             this.tabHome.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::LocalCycleClub.Properties.Resources.lanceondrugs__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(378, 219);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(221, 274);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
@@ -204,6 +197,7 @@ namespace LocalCycleClub
             // 
             // tabLeaderboard
             // 
+            this.tabLeaderboard.Controls.Add(this.pictureBox2);
             this.tabLeaderboard.Controls.Add(this.cbDTP);
             this.tabLeaderboard.Controls.Add(this.btnAddCycle);
             this.tabLeaderboard.Controls.Add(this.listView1);
@@ -219,7 +213,7 @@ namespace LocalCycleClub
             // 
             this.cbDTP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDTP.FormattingEnabled = true;
-            this.cbDTP.Location = new System.Drawing.Point(41, 132);
+            this.cbDTP.Location = new System.Drawing.Point(58, 284);
             this.cbDTP.Name = "cbDTP";
             this.cbDTP.Size = new System.Drawing.Size(121, 24);
             this.cbDTP.TabIndex = 3;
@@ -227,7 +221,7 @@ namespace LocalCycleClub
             // 
             // btnAddCycle
             // 
-            this.btnAddCycle.Location = new System.Drawing.Point(74, 274);
+            this.btnAddCycle.Location = new System.Drawing.Point(71, 431);
             this.btnAddCycle.Name = "btnAddCycle";
             this.btnAddCycle.Size = new System.Drawing.Size(97, 49);
             this.btnAddCycle.TabIndex = 2;
@@ -241,9 +235,9 @@ namespace LocalCycleClub
             this.cyclesTaken,
             this.DistanceCycled});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(233, 74);
+            this.listView1.Location = new System.Drawing.Point(245, 62);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(439, 390);
+            this.listView1.Size = new System.Drawing.Size(511, 418);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -267,7 +261,7 @@ namespace LocalCycleClub
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(281, 16);
+            this.label5.Location = new System.Drawing.Point(421, 12);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(188, 32);
             this.label5.TabIndex = 0;
@@ -292,6 +286,24 @@ namespace LocalCycleClub
             this.tabSignup.Text = "Sign Up";
             this.tabSignup.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LocalCycleClub.Properties.Resources.lanceondrugs__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(378, 219);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(221, 274);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::LocalCycleClub.Properties.Resources.CLT;
+            this.pictureBox2.Location = new System.Drawing.Point(24, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(196, 261);
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -304,11 +316,12 @@ namespace LocalCycleClub
             this.tabControl1.ResumeLayout(false);
             this.tabHome.ResumeLayout(false);
             this.tabHome.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxLogin.ResumeLayout(false);
             this.groupBoxLogin.PerformLayout();
             this.tabLeaderboard.ResumeLayout(false);
             this.tabLeaderboard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -339,6 +352,7 @@ namespace LocalCycleClub
         private System.Windows.Forms.ColumnHeader cyclesTaken;
         private System.Windows.Forms.ColumnHeader DistanceCycled;
         private System.Windows.Forms.ComboBox cbDTP;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
