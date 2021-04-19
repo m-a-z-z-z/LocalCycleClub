@@ -12,7 +12,12 @@ namespace LocalCycleClub
 {
     public partial class Form1 : Form
     {
-        Member member;
+        public List<Member> ListOfMembers = new List<Member>();
+
+        public void SetUpData()
+        {
+            Member m1 = new Member("MazIsDaBest", "Dylan", "Maziarek", "maz@theGOAT.com", "ilikecycling123", new DateTime(31,08,1997), "Thurles, Tipperary", "Lance on Steroids Good");
+        }
 
         public Form1()
         {
@@ -21,7 +26,7 @@ namespace LocalCycleClub
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -50,10 +55,14 @@ namespace LocalCycleClub
 
             AddMember(username, fname, lname, email, pass, dob, address, exp);
         }
-
         private void AddMember(String UserName, String FirstName, String LastName, String Email, String PassWord, DateTime DoB, String Address, String CyclingXP)
         {
             Member m = new Member(UserName, FirstName, LastName, Email, PassWord, DoB, Address, CyclingXP);
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
