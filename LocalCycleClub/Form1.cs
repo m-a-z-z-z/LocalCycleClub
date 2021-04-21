@@ -13,15 +13,14 @@ namespace LocalCycleClub
     public partial class Form1 : Form
     {
         public List<Member> ListOfMembers = new List<Member>();
-
         public void SetUpData()
         {
-            Member m1 = new Member("MazIsDaBest", "Dylan", "Maziarek", "maz@theGOAT.com", "ilikecycling123", new DateTime(31,08,1997), "Thurles, Tipperary", "Lance on Steroids Good");
+            Member m1 = new Member("MazIsDaBest", "Dylan", "Maziarek", "maz@theGOAT.com", "ilikecycling123", new DateTime(31, 08, 1997), "Thurles, Tipperary", "Lance on Steroids Good");
         }
-
         public Form1()
         {
             InitializeComponent();
+            SetUpData();
         }
 
         private void Form1_Load(object sender, EventArgs e)
