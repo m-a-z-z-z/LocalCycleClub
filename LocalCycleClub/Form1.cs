@@ -13,12 +13,84 @@ namespace LocalCycleClub
     public partial class Form1 : Form
     {
         public List<Member> ListOfMembers = new List<Member>();
-        Member member;
+        string memberFile = "membersFile.dat";
+
+        public void SetUpData()
+        {
+            ReadDataFromFile(ref ListOfMembers, memberFile);
+
+            Member m1 = new Member("MazIsDaBest", "Dylan", "Maziarek", "maz@theGOAT.com", "ilikecycling123", new DateTime(31, 08, 1997), "Thurles, Tipperary", "Lance on Steroids Good");
+            ListOfMembers.Add(m1);
+            Member m2 = new Member("DanIsTrash", "Daniel", "Ruane", "dan@nottheGOAT.com", "password123", new DateTime(20, 04, 2000), "The Shticks, Mayo", "Post Drug Bust Lance");
+            ListOfMembers.Add(m2);
+            Member m3 = new Member("ZebedeeInDaTree", "Ben", "Houghton", "ben@jewmail.com", "BenAndKiana4Life69", new DateTime(31, 08, 1998), "Killaloe, Tipperary", "Lance on Steroids Good");
+            ListOfMembers.Add(m3);
+        }
+
+        public static void ReadDataFromFile(ref List<Member> m, string memberFile)
+        {
+            List<Member> temp = new List<Member>();
+            FileInfo memberInfo = new FileInfo(memberFile);
+            FileStream memFSFile;
+
+            if (memberInfo.Exists)
+            {
+                memFSFile = new FileStream(memberFile, FileMode.Open, FileAccess.Read);
+                MessageBox.Show("Found file for read " + memberInfo.FullName);
+                BinaryFormatter bformatter = new BinaryFormatter();
+                try
+                {
+                    temp = bformatter.Deserialize(memFSFile) as List<Member>;
+                    m = temp;
+
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show("{0} Exception caught." + e);
+                }
+                memFSFile.Close();
+            }
+            if (!memberInfo.Exists)
+            {
+                MessageBox.Show("ERROR CANT FIND FILE " + memberInfo.FullName);
+            }
+        }
+        public static void writeDataToFile(List<Member> m, string memberFile)
+        {
+            List<Member> temp = new List<Member>();
+            FileInfo memberInfo = new FileInfo(memberFile);
+            FileStream memberFileStream;
+
+            if (memberInfo.Exists)
+            {
+                memberFileStream = new FileStream(memberFile, FileMode.Truncate, FileAccess.Write);
+                MessageBox.Show("found file " + memberInfo.FullName);
+            }
+            else
+            {
+                memberFileStream = new FileStream(memberFile, FileMode.Create, FileAccess.Write);
+                MessageBox.Show("created file " + memberInfo.FullName);
+            }
+            BinaryFormatter bformatter = new BinaryFormatter();
+
+            try
+            {
+                bformatter.Serialize(memberFileStream, m);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("{0} Exception caught." + e);
+            }
+
+            memberFileStream.Close();
+            MessageBox.Show("Data written to file");
+        }
+
         public Form1()
         {
             InitializeComponent();
+            SetUpData();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
