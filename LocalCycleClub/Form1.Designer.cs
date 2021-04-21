@@ -493,7 +493,6 @@ namespace LocalCycleClub
             this.tabSignup.TabIndex = 4;
             this.tabSignup.Text = "Sign Up";
             this.tabSignup.UseVisualStyleBackColor = true;
-            this.tabSignup.Click += new System.EventHandler(this.tabSignup_Click);
             // 
             // label14
             // 
@@ -667,7 +666,6 @@ namespace LocalCycleClub
             this.btnAddCycle.TabIndex = 7;
             this.btnAddCycle.Text = "Add Cycle";
             this.btnAddCycle.UseVisualStyleBackColor = true;
-            this.btnAddCycle.Click += new System.EventHandler(this.btnAddCycle_Click_1);
             // 
             // textBox1
             // 
@@ -730,7 +728,7 @@ namespace LocalCycleClub
         private System.Windows.Forms.ColumnHeader name;
         private System.Windows.Forms.ColumnHeader cyclesTaken;
         private System.Windows.Forms.ColumnHeader DistanceCycled;
-<<<<<<< Updated upstream
+
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnClear;
@@ -750,19 +748,15 @@ namespace LocalCycleClub
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label14;
-=======
         private System.Windows.Forms.ComboBox cbDTP;
         private System.Windows.Forms.ListView listView3;
         private System.Windows.Forms.Label label15;
->>>>>>> Stashed changes
         private System.Windows.Forms.Button btnAddActivities;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.ColumnHeader AActivity;
         private System.Windows.Forms.ColumnHeader AName;
         private System.Windows.Forms.ColumnHeader ALocation;
         private System.Windows.Forms.ColumnHeader ADate;
-<<<<<<< Updated upstream
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.GroupBox grpBoxAchievementsUnlckd;
         private System.Windows.Forms.Label lblUsername;
@@ -774,8 +768,7 @@ namespace LocalCycleClub
         private System.Windows.Forms.PictureBox pbTrophy;
         private System.Windows.Forms.Button btnAddCycle;
         private System.Windows.Forms.TextBox textBox1;
-=======
->>>>>>> Stashed changes
+
     }
 }
 
