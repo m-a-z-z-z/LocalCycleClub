@@ -16,6 +16,7 @@ namespace LocalCycleClub
         DateTime DOB { get; set; }
         string Address { get; set; }
         string CyclingExperience { get; set; }
+        string DistanceCycled { get; set; }
 
         public Member(string username, string fname, string lname, string email, string pword, DateTime dob, string address, string cycExp)
         {

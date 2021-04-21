@@ -115,7 +115,7 @@ namespace LocalCycleClub
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(776, 528);
+            this.tabControl1.Size = new System.Drawing.Size(770, 530);
             this.tabControl1.TabIndex = 0;
             // 
             // tabHome
@@ -128,7 +128,7 @@ namespace LocalCycleClub
             this.tabHome.Location = new System.Drawing.Point(4, 25);
             this.tabHome.Name = "tabHome";
             this.tabHome.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHome.Size = new System.Drawing.Size(768, 499);
+            this.tabHome.Size = new System.Drawing.Size(762, 501);
             this.tabHome.TabIndex = 0;
             this.tabHome.Text = "Home";
             this.tabHome.UseVisualStyleBackColor = true;
@@ -138,7 +138,7 @@ namespace LocalCycleClub
             this.pictureBox1.Image = global::LocalCycleClub.Properties.Resources.lanceondrugs__1_;
             this.pictureBox1.Location = new System.Drawing.Point(378, 219);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(221, 274);
+            this.pictureBox1.Size = new System.Drawing.Size(221, 276);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -146,7 +146,7 @@ namespace LocalCycleClub
             // 
             this.heroOfTheMonthLbl.AutoSize = true;
             this.heroOfTheMonthLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.heroOfTheMonthLbl.Location = new System.Drawing.Point(603, 293);
+            this.heroOfTheMonthLbl.Location = new System.Drawing.Point(605, 316);
             this.heroOfTheMonthLbl.Name = "heroOfTheMonthLbl";
             this.heroOfTheMonthLbl.Size = new System.Drawing.Size(169, 72);
             this.heroOfTheMonthLbl.TabIndex = 4;
@@ -248,7 +248,7 @@ namespace LocalCycleClub
             this.tabActivities.Location = new System.Drawing.Point(4, 25);
             this.tabActivities.Name = "tabActivities";
             this.tabActivities.Padding = new System.Windows.Forms.Padding(3);
-            this.tabActivities.Size = new System.Drawing.Size(768, 499);
+            this.tabActivities.Size = new System.Drawing.Size(762, 501);
             this.tabActivities.TabIndex = 1;
             this.tabActivities.Text = "Activities";
             this.tabActivities.UseVisualStyleBackColor = true;
@@ -316,7 +316,7 @@ namespace LocalCycleClub
             this.tabLeaderboard.Controls.Add(this.label5);
             this.tabLeaderboard.Location = new System.Drawing.Point(4, 25);
             this.tabLeaderboard.Name = "tabLeaderboard";
-            this.tabLeaderboard.Size = new System.Drawing.Size(768, 499);
+            this.tabLeaderboard.Size = new System.Drawing.Size(762, 501);
             this.tabLeaderboard.TabIndex = 2;
             this.tabLeaderboard.Text = "Leaderboard";
             this.tabLeaderboard.UseVisualStyleBackColor = true;
@@ -394,7 +394,7 @@ namespace LocalCycleClub
             this.tabProfile.Controls.Add(this.lblUsername);
             this.tabProfile.Location = new System.Drawing.Point(4, 25);
             this.tabProfile.Name = "tabProfile";
-            this.tabProfile.Size = new System.Drawing.Size(768, 499);
+            this.tabProfile.Size = new System.Drawing.Size(762, 501);
             this.tabProfile.TabIndex = 3;
             this.tabProfile.Text = "Profile";
             this.tabProfile.UseVisualStyleBackColor = true;
@@ -512,7 +512,7 @@ namespace LocalCycleClub
             this.tabSignup.Controls.Add(this.label6);
             this.tabSignup.Location = new System.Drawing.Point(4, 25);
             this.tabSignup.Name = "tabSignup";
-            this.tabSignup.Size = new System.Drawing.Size(768, 499);
+            this.tabSignup.Size = new System.Drawing.Size(762, 501);
             this.tabSignup.TabIndex = 4;
             this.tabSignup.Text = "Sign Up";
             this.tabSignup.UseVisualStyleBackColor = true;
