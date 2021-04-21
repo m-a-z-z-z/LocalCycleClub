@@ -29,7 +29,7 @@ namespace LocalCycleClub
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
             "Caught Cheating",
             "Got caught cheating"}, 0);
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -55,7 +55,6 @@ namespace LocalCycleClub
             this.ADate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabLeaderboard = new System.Windows.Forms.TabPage();
             this.pbTrophy = new System.Windows.Forms.PictureBox();
-            this.btnAddCycle = new System.Windows.Forms.Button();
             this.lvLeaderboard = new System.Windows.Forms.ListView();
             this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cyclesTaken = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -90,6 +89,7 @@ namespace LocalCycleClub
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnAddCycle = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -113,7 +113,7 @@ namespace LocalCycleClub
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(776, 528);
+            this.tabControl1.Size = new System.Drawing.Size(870, 635);
             this.tabControl1.TabIndex = 0;
             // 
             // tabHome
@@ -126,7 +126,7 @@ namespace LocalCycleClub
             this.tabHome.Location = new System.Drawing.Point(4, 25);
             this.tabHome.Name = "tabHome";
             this.tabHome.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHome.Size = new System.Drawing.Size(768, 499);
+            this.tabHome.Size = new System.Drawing.Size(862, 606);
             this.tabHome.TabIndex = 0;
             this.tabHome.Text = "Home";
             this.tabHome.UseVisualStyleBackColor = true;
@@ -134,9 +134,9 @@ namespace LocalCycleClub
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LocalCycleClub.Properties.Resources.lanceondrugs__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(378, 219);
+            this.pictureBox1.Location = new System.Drawing.Point(403, 304);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(221, 274);
+            this.pictureBox1.Size = new System.Drawing.Size(221, 272);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -144,7 +144,7 @@ namespace LocalCycleClub
             // 
             this.heroOfTheMonthLbl.AutoSize = true;
             this.heroOfTheMonthLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.heroOfTheMonthLbl.Location = new System.Drawing.Point(603, 293);
+            this.heroOfTheMonthLbl.Location = new System.Drawing.Point(645, 398);
             this.heroOfTheMonthLbl.Name = "heroOfTheMonthLbl";
             this.heroOfTheMonthLbl.Size = new System.Drawing.Size(169, 72);
             this.heroOfTheMonthLbl.TabIndex = 4;
@@ -158,7 +158,7 @@ namespace LocalCycleClub
             this.groupBoxLogin.Controls.Add(this.txtBoxUsername);
             this.groupBoxLogin.Controls.Add(this.passwordLoginLbl);
             this.groupBoxLogin.Controls.Add(this.userNameLoginLbl);
-            this.groupBoxLogin.Location = new System.Drawing.Point(378, 43);
+            this.groupBoxLogin.Location = new System.Drawing.Point(403, 56);
             this.groupBoxLogin.Name = "groupBoxLogin";
             this.groupBoxLogin.Size = new System.Drawing.Size(350, 170);
             this.groupBoxLogin.TabIndex = 3;
@@ -220,7 +220,7 @@ namespace LocalCycleClub
             // 
             // txtBoxAnnouncements
             // 
-            this.txtBoxAnnouncements.Location = new System.Drawing.Point(6, 56);
+            this.txtBoxAnnouncements.Location = new System.Drawing.Point(34, 56);
             this.txtBoxAnnouncements.Name = "txtBoxAnnouncements";
             this.txtBoxAnnouncements.Size = new System.Drawing.Size(330, 437);
             this.txtBoxAnnouncements.TabIndex = 2;
@@ -244,7 +244,7 @@ namespace LocalCycleClub
             this.tabActivities.Location = new System.Drawing.Point(4, 25);
             this.tabActivities.Name = "tabActivities";
             this.tabActivities.Padding = new System.Windows.Forms.Padding(3);
-            this.tabActivities.Size = new System.Drawing.Size(768, 499);
+            this.tabActivities.Size = new System.Drawing.Size(862, 606);
             this.tabActivities.TabIndex = 1;
             this.tabActivities.Text = "Activities";
             this.tabActivities.UseVisualStyleBackColor = true;
@@ -307,12 +307,11 @@ namespace LocalCycleClub
             // tabLeaderboard
             // 
             this.tabLeaderboard.Controls.Add(this.pbTrophy);
-            this.tabLeaderboard.Controls.Add(this.btnAddCycle);
             this.tabLeaderboard.Controls.Add(this.lvLeaderboard);
             this.tabLeaderboard.Controls.Add(this.lblLeaderboard);
             this.tabLeaderboard.Location = new System.Drawing.Point(4, 25);
             this.tabLeaderboard.Name = "tabLeaderboard";
-            this.tabLeaderboard.Size = new System.Drawing.Size(768, 499);
+            this.tabLeaderboard.Size = new System.Drawing.Size(862, 606);
             this.tabLeaderboard.TabIndex = 2;
             this.tabLeaderboard.Text = "Leaderboard";
             this.tabLeaderboard.UseVisualStyleBackColor = true;
@@ -320,21 +319,11 @@ namespace LocalCycleClub
             // pbTrophy
             // 
             this.pbTrophy.Image = global::LocalCycleClub.Properties.Resources.CLT;
-            this.pbTrophy.Location = new System.Drawing.Point(33, 16);
+            this.pbTrophy.Location = new System.Drawing.Point(23, 131);
             this.pbTrophy.Name = "pbTrophy";
             this.pbTrophy.Size = new System.Drawing.Size(195, 262);
             this.pbTrophy.TabIndex = 4;
             this.pbTrophy.TabStop = false;
-            // 
-            // btnAddCycle
-            // 
-            this.btnAddCycle.Location = new System.Drawing.Point(70, 415);
-            this.btnAddCycle.Name = "btnAddCycle";
-            this.btnAddCycle.Size = new System.Drawing.Size(97, 49);
-            this.btnAddCycle.TabIndex = 2;
-            this.btnAddCycle.Text = "Add Cycle";
-            this.btnAddCycle.UseVisualStyleBackColor = true;
-            this.btnAddCycle.Click += new System.EventHandler(this.btnAddCycle_Click);
             // 
             // lvLeaderboard
             // 
@@ -345,7 +334,7 @@ namespace LocalCycleClub
             this.lvLeaderboard.HideSelection = false;
             this.lvLeaderboard.Location = new System.Drawing.Point(247, 74);
             this.lvLeaderboard.Name = "lvLeaderboard";
-            this.lvLeaderboard.Size = new System.Drawing.Size(502, 390);
+            this.lvLeaderboard.Size = new System.Drawing.Size(566, 399);
             this.lvLeaderboard.TabIndex = 1;
             this.lvLeaderboard.UseCompatibleStateImageBehavior = false;
             this.lvLeaderboard.View = System.Windows.Forms.View.Details;
@@ -378,6 +367,7 @@ namespace LocalCycleClub
             // 
             // tabProfile
             // 
+            this.tabProfile.Controls.Add(this.btnAddCycle);
             this.tabProfile.Controls.Add(this.lblClubRanking);
             this.tabProfile.Controls.Add(this.lblKMCycled);
             this.tabProfile.Controls.Add(this.clubRankinglbl);
@@ -387,7 +377,7 @@ namespace LocalCycleClub
             this.tabProfile.Controls.Add(this.pictureBox2);
             this.tabProfile.Location = new System.Drawing.Point(4, 25);
             this.tabProfile.Name = "tabProfile";
-            this.tabProfile.Size = new System.Drawing.Size(768, 499);
+            this.tabProfile.Size = new System.Drawing.Size(862, 606);
             this.tabProfile.TabIndex = 3;
             this.tabProfile.Text = "Profile";
             this.tabProfile.UseVisualStyleBackColor = true;
@@ -434,7 +424,7 @@ namespace LocalCycleClub
             // 
             this.grpBoxAchievementsUnlckd.Controls.Add(this.achievementsListView);
             this.grpBoxAchievementsUnlckd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpBoxAchievementsUnlckd.Location = new System.Drawing.Point(383, 31);
+            this.grpBoxAchievementsUnlckd.Location = new System.Drawing.Point(469, 22);
             this.grpBoxAchievementsUnlckd.Name = "grpBoxAchievementsUnlckd";
             this.grpBoxAchievementsUnlckd.Size = new System.Drawing.Size(355, 433);
             this.grpBoxAchievementsUnlckd.TabIndex = 1;
@@ -445,9 +435,9 @@ namespace LocalCycleClub
             // 
             this.achievementsListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.achievementsListView.HideSelection = false;
-            listViewItem1.Tag = "Oops";
+            listViewItem4.Tag = "Oops";
             this.achievementsListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem4});
             this.achievementsListView.Location = new System.Drawing.Point(3, 20);
             this.achievementsListView.Name = "achievementsListView";
             this.achievementsListView.Size = new System.Drawing.Size(349, 410);
@@ -497,7 +487,7 @@ namespace LocalCycleClub
             this.tabSignup.Controls.Add(this.label6);
             this.tabSignup.Location = new System.Drawing.Point(4, 25);
             this.tabSignup.Name = "tabSignup";
-            this.tabSignup.Size = new System.Drawing.Size(768, 499);
+            this.tabSignup.Size = new System.Drawing.Size(862, 606);
             this.tabSignup.TabIndex = 4;
             this.tabSignup.Text = "Sign Up";
             this.tabSignup.UseVisualStyleBackColor = true;
@@ -667,11 +657,20 @@ namespace LocalCycleClub
             this.label6.TabIndex = 0;
             this.label6.Text = "Username";
             // 
+            // btnAddCycle
+            // 
+            this.btnAddCycle.Location = new System.Drawing.Point(96, 479);
+            this.btnAddCycle.Name = "btnAddCycle";
+            this.btnAddCycle.Size = new System.Drawing.Size(97, 49);
+            this.btnAddCycle.TabIndex = 7;
+            this.btnAddCycle.Text = "Add Cycle";
+            this.btnAddCycle.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 554);
+            this.ClientSize = new System.Drawing.Size(968, 659);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -717,7 +716,6 @@ namespace LocalCycleClub
         private System.Windows.Forms.Label heroOfTheMonthLbl;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblLeaderboard;
-        private System.Windows.Forms.Button btnAddCycle;
         private System.Windows.Forms.ListView lvLeaderboard;
         private System.Windows.Forms.ColumnHeader name;
         private System.Windows.Forms.ColumnHeader cyclesTaken;
@@ -764,6 +762,7 @@ namespace LocalCycleClub
         private System.Windows.Forms.Label kmCycledlbl;
         private System.Windows.Forms.ListView achievementsListView;
         private System.Windows.Forms.PictureBox pbTrophy;
+        private System.Windows.Forms.Button btnAddCycle;
 =======
 >>>>>>> Stashed changes
     }
