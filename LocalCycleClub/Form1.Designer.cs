@@ -29,7 +29,7 @@ namespace LocalCycleClub
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
             "Caught Cheating",
             "Got caught cheating"}, 0);
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -90,6 +90,7 @@ namespace LocalCycleClub
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnAddCycle = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -367,6 +368,7 @@ namespace LocalCycleClub
             // 
             // tabProfile
             // 
+            this.tabProfile.Controls.Add(this.textBox1);
             this.tabProfile.Controls.Add(this.btnAddCycle);
             this.tabProfile.Controls.Add(this.lblClubRanking);
             this.tabProfile.Controls.Add(this.lblKMCycled);
@@ -435,9 +437,9 @@ namespace LocalCycleClub
             // 
             this.achievementsListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.achievementsListView.HideSelection = false;
-            listViewItem4.Tag = "Oops";
+            listViewItem6.Tag = "Oops";
             this.achievementsListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
+            listViewItem6});
             this.achievementsListView.Location = new System.Drawing.Point(3, 20);
             this.achievementsListView.Name = "achievementsListView";
             this.achievementsListView.Size = new System.Drawing.Size(349, 410);
@@ -659,12 +661,20 @@ namespace LocalCycleClub
             // 
             // btnAddCycle
             // 
-            this.btnAddCycle.Location = new System.Drawing.Point(96, 479);
+            this.btnAddCycle.Location = new System.Drawing.Point(57, 479);
             this.btnAddCycle.Name = "btnAddCycle";
             this.btnAddCycle.Size = new System.Drawing.Size(97, 49);
             this.btnAddCycle.TabIndex = 7;
             this.btnAddCycle.Text = "Add Cycle";
             this.btnAddCycle.UseVisualStyleBackColor = true;
+            this.btnAddCycle.Click += new System.EventHandler(this.btnAddCycle_Click_1);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(214, 492);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 8;
             // 
             // Form1
             // 
@@ -763,6 +773,7 @@ namespace LocalCycleClub
         private System.Windows.Forms.ListView achievementsListView;
         private System.Windows.Forms.PictureBox pbTrophy;
         private System.Windows.Forms.Button btnAddCycle;
+        private System.Windows.Forms.TextBox textBox1;
 =======
 >>>>>>> Stashed changes
     }

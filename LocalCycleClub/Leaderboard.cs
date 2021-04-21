@@ -9,8 +9,7 @@ namespace LocalCycleClub
 {
     class Leaderboard
     {
-      
-
+    
         string name { get; set; }
         int cyclesTaken { get; set; }
         double DistanceCycled { get; set; }

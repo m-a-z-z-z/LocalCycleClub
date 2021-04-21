@@ -62,13 +62,8 @@ namespace LocalCycleClub
 
         }
 
-        private void btnAddCycle_Click(object sender, EventArgs e)
+        private void btnAddCycle_Click_1(object sender, EventArgs e)
         {
-            cyclesTaken = Convert.ToString( this.cyclesTaken.Text);
-
-            LBoard.Add(new Leaderboard(this.tbname.Text, this.cyclesTaken.Text, this.DistanceCycled))
-
-
 
         }
     }
