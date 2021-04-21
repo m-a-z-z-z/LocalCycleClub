@@ -19,11 +19,11 @@ namespace LocalCycleClub
 
         public Achievements(List<string> milestone, DateTime dateAchieved, int numMilestones, string milestoneDesc, List<string> achievableMs, int numTimesEarned, string motivation, DateTime dateStarted)
         {
-            this.Milestones = new List<string>();
+            this.Milestones = milestone;
             this.DateAcheived = dateAchieved;
             this.NumOfMilestone = numMilestones;
             this.MilestoneDescription = milestoneDesc;
-            this.AchievableMilestone = new List<string>();
+            this.AchievableMilestone = achievableMs ;
             this.NumOfTimesEarned = numTimesEarned;
             this.MotivationSentence = motivation;
             this.DateAcheived = dateStarted;

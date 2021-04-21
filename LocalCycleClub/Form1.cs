@@ -14,6 +14,7 @@ namespace LocalCycleClub
     {
         public List<Member> ListOfMembers = new List<Member>();
         Member member;
+        public List<string> LBoard = new List<string>();
         public Form1()
         {
             InitializeComponent();
@@ -54,6 +55,21 @@ namespace LocalCycleClub
         private void AddMember(String UserName, String FirstName, String LastName, String Email, String PassWord, DateTime DoB, String Address, String CyclingXP)
         {
             Member m = new Member(UserName, FirstName, LastName, Email, PassWord, DoB, Address, CyclingXP);
+        }
+
+        private void tabSignup_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddCycle_Click(object sender, EventArgs e)
+        {
+            cyclesTaken = Convert.ToString( this.cyclesTaken.Text);
+
+            LBoard.Add(new Leaderboard(this.tbname.Text, this.cyclesTaken.Text, this.DistanceCycled))
+
+
+
         }
     }
 }
