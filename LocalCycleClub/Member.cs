@@ -16,8 +16,11 @@ namespace LocalCycleClub
         DateTime DOB { get; set; }
         string Address { get; set; }
         string CyclingExperience { get; set; }
+        int KmCycled { get; set; }
+        int numOfCycles { get; set; }
 
-        public Member(string username, string fname, string lname, string email, string pword, DateTime dob, string address, string cycExp)
+        public Member(string username, string fname, string lname, string email, string pword, 
+            DateTime dob, string address, string cycExp,int kmCycled, int numOfCycles)
         {
             this.Username = username;
             this.FirstName = fname;
@@ -27,6 +30,9 @@ namespace LocalCycleClub
             this.DOB = dob;
             this.Address = address;
             this.CyclingExperience = cycExp;
+            this.KmCycled = kmCycled;
+            this.numOfCycles = numOfCycles;
+
         }
     }
 }
