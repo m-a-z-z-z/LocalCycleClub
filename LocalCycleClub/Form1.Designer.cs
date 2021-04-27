@@ -29,7 +29,7 @@ namespace LocalCycleClub
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "Caught Cheating",
             "Got caught cheating"}, 0);
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -61,12 +61,21 @@ namespace LocalCycleClub
             this.DistanceCycled = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblLeaderboard = new System.Windows.Forms.Label();
             this.tabProfile = new System.Windows.Forms.TabPage();
+            this.lblDateStarted = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblMotivationalSentence = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnAddCycle = new System.Windows.Forms.Button();
             this.lblClubRanking = new System.Windows.Forms.Label();
             this.lblKMCycled = new System.Windows.Forms.Label();
             this.clubRankinglbl = new System.Windows.Forms.Label();
             this.kmCycledlbl = new System.Windows.Forms.Label();
             this.grpBoxAchievementsUnlckd = new System.Windows.Forms.GroupBox();
             this.achievementsListView = new System.Windows.Forms.ListView();
+            this.chMilestone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chDescription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chDateAchieved = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblUsername = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabSignup = new System.Windows.Forms.TabPage();
@@ -89,8 +98,7 @@ namespace LocalCycleClub
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnAddCycle = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblStartdate = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -339,6 +347,7 @@ namespace LocalCycleClub
             this.lvLeaderboard.TabIndex = 1;
             this.lvLeaderboard.UseCompatibleStateImageBehavior = false;
             this.lvLeaderboard.View = System.Windows.Forms.View.Details;
+            this.lvLeaderboard.SelectedIndexChanged += new System.EventHandler(this.lvLeaderboard_SelectedIndexChanged);
             // 
             // name
             // 
@@ -368,6 +377,11 @@ namespace LocalCycleClub
             // 
             // tabProfile
             // 
+            this.tabProfile.Controls.Add(this.lblStartdate);
+            this.tabProfile.Controls.Add(this.lblDateStarted);
+            this.tabProfile.Controls.Add(this.button1);
+            this.tabProfile.Controls.Add(this.lblMotivationalSentence);
+            this.tabProfile.Controls.Add(this.textBox2);
             this.tabProfile.Controls.Add(this.textBox1);
             this.tabProfile.Controls.Add(this.btnAddCycle);
             this.tabProfile.Controls.Add(this.lblClubRanking);
@@ -384,6 +398,60 @@ namespace LocalCycleClub
             this.tabProfile.Text = "Profile";
             this.tabProfile.UseVisualStyleBackColor = true;
             // 
+            // lblDateStarted
+            // 
+            this.lblDateStarted.AutoSize = true;
+            this.lblDateStarted.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateStarted.Location = new System.Drawing.Point(58, 443);
+            this.lblDateStarted.Name = "lblDateStarted";
+            this.lblDateStarted.Size = new System.Drawing.Size(89, 18);
+            this.lblDateStarted.TabIndex = 1;
+            this.lblDateStarted.Text = "Start Date:";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(353, 517);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 49);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Add Sentence";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // lblMotivationalSentence
+            // 
+            this.lblMotivationalSentence.AutoSize = true;
+            this.lblMotivationalSentence.Font = new System.Drawing.Font("Microsoft Yi Baiti", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMotivationalSentence.Location = new System.Drawing.Point(480, 470);
+            this.lblMotivationalSentence.Name = "lblMotivationalSentence";
+            this.lblMotivationalSentence.Size = new System.Drawing.Size(158, 17);
+            this.lblMotivationalSentence.TabIndex = 9;
+            this.lblMotivationalSentence.Text = "Motivational Sentence";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(471, 490);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(375, 76);
+            this.textBox2.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(214, 530);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 8;
+            // 
+            // btnAddCycle
+            // 
+            this.btnAddCycle.Location = new System.Drawing.Point(57, 517);
+            this.btnAddCycle.Name = "btnAddCycle";
+            this.btnAddCycle.Size = new System.Drawing.Size(97, 49);
+            this.btnAddCycle.TabIndex = 7;
+            this.btnAddCycle.Text = "Add Cycle";
+            this.btnAddCycle.UseVisualStyleBackColor = true;
+            // 
             // lblClubRanking
             // 
             this.lblClubRanking.AutoSize = true;
@@ -396,11 +464,11 @@ namespace LocalCycleClub
             // lblKMCycled
             // 
             this.lblKMCycled.AutoSize = true;
-            this.lblKMCycled.Location = new System.Drawing.Point(177, 353);
+            this.lblKMCycled.Location = new System.Drawing.Point(211, 353);
             this.lblKMCycled.Name = "lblKMCycled";
-            this.lblKMCycled.Size = new System.Drawing.Size(40, 17);
+            this.lblKMCycled.Size = new System.Drawing.Size(32, 17);
             this.lblKMCycled.TabIndex = 5;
-            this.lblKMCycled.Text = "0 Km";
+            this.lblKMCycled.Text = " Km";
             // 
             // clubRankinglbl
             // 
@@ -428,24 +496,44 @@ namespace LocalCycleClub
             this.grpBoxAchievementsUnlckd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxAchievementsUnlckd.Location = new System.Drawing.Point(469, 22);
             this.grpBoxAchievementsUnlckd.Name = "grpBoxAchievementsUnlckd";
-            this.grpBoxAchievementsUnlckd.Size = new System.Drawing.Size(355, 433);
+            this.grpBoxAchievementsUnlckd.Size = new System.Drawing.Size(380, 300);
             this.grpBoxAchievementsUnlckd.TabIndex = 1;
             this.grpBoxAchievementsUnlckd.TabStop = false;
             this.grpBoxAchievementsUnlckd.Text = "Achievements Unlocked";
             // 
             // achievementsListView
             // 
+            this.achievementsListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chMilestone,
+            this.chDescription,
+            this.chDateAchieved});
             this.achievementsListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.achievementsListView.HideSelection = false;
-            listViewItem6.Tag = "Oops";
+            listViewItem1.Tag = "Oops";
             this.achievementsListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem6});
+            listViewItem1});
             this.achievementsListView.Location = new System.Drawing.Point(3, 20);
             this.achievementsListView.Name = "achievementsListView";
-            this.achievementsListView.Size = new System.Drawing.Size(349, 410);
+            this.achievementsListView.Size = new System.Drawing.Size(374, 277);
             this.achievementsListView.TabIndex = 0;
             this.achievementsListView.UseCompatibleStateImageBehavior = false;
             this.achievementsListView.View = System.Windows.Forms.View.Details;
+            this.achievementsListView.SelectedIndexChanged += new System.EventHandler(this.achievementsListView_SelectedIndexChanged);
+            // 
+            // chMilestone
+            // 
+            this.chMilestone.Text = "Milestone";
+            this.chMilestone.Width = 120;
+            // 
+            // chDescription
+            // 
+            this.chDescription.Text = "Description";
+            this.chDescription.Width = 150;
+            // 
+            // chDateAchieved
+            // 
+            this.chDateAchieved.Text = "Date ";
+            this.chDateAchieved.Width = 90;
             // 
             // lblUsername
             // 
@@ -658,21 +746,13 @@ namespace LocalCycleClub
             this.label6.TabIndex = 0;
             this.label6.Text = "Username";
             // 
-            // btnAddCycle
+            // lblStartdate
             // 
-            this.btnAddCycle.Location = new System.Drawing.Point(57, 479);
-            this.btnAddCycle.Name = "btnAddCycle";
-            this.btnAddCycle.Size = new System.Drawing.Size(97, 49);
-            this.btnAddCycle.TabIndex = 7;
-            this.btnAddCycle.Text = "Add Cycle";
-            this.btnAddCycle.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(214, 492);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 8;
+            this.lblStartdate.AutoSize = true;
+            this.lblStartdate.Location = new System.Drawing.Point(177, 445);
+            this.lblStartdate.Name = "lblStartdate";
+            this.lblStartdate.Size = new System.Drawing.Size(0, 17);
+            this.lblStartdate.TabIndex = 11;
             // 
             // Form1
             // 
@@ -748,8 +828,6 @@ namespace LocalCycleClub
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox cbDTP;
-        private System.Windows.Forms.ListView listView3;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btnAddActivities;
         private System.Windows.Forms.ListView listView2;
@@ -768,7 +846,14 @@ namespace LocalCycleClub
         private System.Windows.Forms.PictureBox pbTrophy;
         private System.Windows.Forms.Button btnAddCycle;
         private System.Windows.Forms.TextBox textBox1;
-
+        private System.Windows.Forms.Label lblMotivationalSentence;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblDateStarted;
+        private System.Windows.Forms.ColumnHeader chMilestone;
+        private System.Windows.Forms.ColumnHeader chDescription;
+        private System.Windows.Forms.ColumnHeader chDateAchieved;
+        private System.Windows.Forms.Label lblStartdate;
     }
 }
 

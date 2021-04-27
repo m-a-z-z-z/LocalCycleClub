@@ -13,20 +13,22 @@ namespace LocalCycleClub
         int NumOfMilestone { get; set; }
         string MilestoneDescription { get; set; }
         List<string> AchievableMilestone { get; set; }
-        int NumOfTimesEarned { get; set; }
+        int ClubRank { get; set; }
         string MotivationSentence { get; set; }
         DateTime DateStarted { get; set; }
 
-        public Achievements(List<string> milestone, DateTime dateAchieved, int numMilestones, string milestoneDesc, List<string> achievableMs, int numTimesEarned, string motivation, DateTime dateStarted)
+        public Achievements(List<string> milestone, DateTime dateAchieved, int numMilestones, string milestoneDesc,
+            List<string> achievableMs, int clubRank, string motivation, DateTime dateStarted)
         {
             this.Milestones = milestone;
             this.DateAcheived = dateAchieved;
             this.NumOfMilestone = numMilestones;
             this.MilestoneDescription = milestoneDesc;
-            this.AchievableMilestone = achievableMs ;
-            this.NumOfTimesEarned = numTimesEarned;
+            this.AchievableMilestone = achievableMs;
+            this.ClubRank = clubRank;
             this.MotivationSentence = motivation;
-            this.DateAcheived = dateStarted;
+            this.DateStarted = dateStarted;
         }
+
     }
 }
