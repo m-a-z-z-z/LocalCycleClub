@@ -179,6 +179,16 @@ namespace LocalCycleClub
             }
         }
 
+        //private void btnLogin_Click(object sender, EventArgs e)
+        //{
+        //    foreach (Member member in ListOfMembers)
+        //    {
+        //        if (txtBoxUsername.Text = member)
+        //        {
 
+        //        }
+        //    }
+        //}
     }
+
 }

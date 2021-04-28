@@ -34,6 +34,20 @@ namespace LocalCycleClub
            
 
         }
+        public Member(string username, string fname, string lname, string email, string pword,
+            DateTime dob, string address, string cycExp, double kmCycled, int numOfCycles)
+        {
+            this.Username = username;
+            this.FirstName = fname;
+            this.LastName = lname;
+            this.Email = email;
+            this.Password = pword;
+            this.DOB = dob;
+            this.Address = address;
+            this.CyclingExperience = cycExp;
+            this.KmCycled = kmCycled;
+            this.NumOfCycles = numOfCycles;
+        }
 
         public Member(string username)
         {
