@@ -32,5 +32,10 @@ namespace LocalCycleClub
            
 
         }
+
+        public Member(string username)
+        {
+            this.Username = username;
+        }
     }
 }

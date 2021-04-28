@@ -17,9 +17,9 @@ namespace LocalCycleClub
     {
         public List<Achievements> achievements = new List<Achievements>();
         public List<Member> ListOfMembers = new List<Member>();
-        string memberFile = "c:\\membersFile.txt";
+       // string memberFile = "membersFile.dat";
 
-        public void SetUpData()
+        /*public void SetUpData()
         {
             ReadDataFromFile(ref ListOfMembers, memberFile);
            
@@ -89,11 +89,11 @@ namespace LocalCycleClub
             memberFileStream.Close();
             MessageBox.Show("Data written to file");
         }
-
+*/
         public Form1()
         {
             InitializeComponent();
-            SetUpData();
+            //SetUpData();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -156,8 +156,20 @@ namespace LocalCycleClub
 
                 btnAddSentence.Text = "Add Sentence";
                 this.txtMotivationalSentence.Enabled = false;
-            
+
             }
+        }
+
+        private void btnDeleteSentence_Click(object sender, EventArgs e)
+        {
+            this.txtMotivationalSentence.Text = "";
+            achievements.Remove(new Achievements(this.txtMotivationalSentence.Text));
+        }
+
+        private void lblUsername_Click(object sender, EventArgs e)
+        {
+            btnSubmit_Click == false;
+            if (btnSubmit.Click==true)
         }
     }
 }

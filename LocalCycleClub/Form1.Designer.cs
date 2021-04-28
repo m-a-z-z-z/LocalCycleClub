@@ -29,7 +29,7 @@ namespace LocalCycleClub
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "Caught Cheating",
             "Got caught cheating"}, 0);
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -316,6 +316,7 @@ namespace LocalCycleClub
             // 
             // tabLeaderboard
             // 
+            this.tabLeaderboard.BackColor = System.Drawing.Color.Black;
             this.tabLeaderboard.Controls.Add(this.pbTrophy);
             this.tabLeaderboard.Controls.Add(this.lvLeaderboard);
             this.tabLeaderboard.Controls.Add(this.lblLeaderboard);
@@ -324,7 +325,6 @@ namespace LocalCycleClub
             this.tabLeaderboard.Size = new System.Drawing.Size(862, 606);
             this.tabLeaderboard.TabIndex = 2;
             this.tabLeaderboard.Text = "Leaderboard";
-            this.tabLeaderboard.UseVisualStyleBackColor = true;
             // 
             // pbTrophy
             // 
@@ -341,6 +341,7 @@ namespace LocalCycleClub
             this.name,
             this.cyclesTaken,
             this.DistanceCycled});
+            this.lvLeaderboard.ForeColor = System.Drawing.Color.SlateGray;
             this.lvLeaderboard.HideSelection = false;
             this.lvLeaderboard.Location = new System.Drawing.Point(247, 74);
             this.lvLeaderboard.Name = "lvLeaderboard";
@@ -369,6 +370,7 @@ namespace LocalCycleClub
             // 
             this.lblLeaderboard.AutoSize = true;
             this.lblLeaderboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLeaderboard.ForeColor = System.Drawing.Color.SlateGray;
             this.lblLeaderboard.Location = new System.Drawing.Point(400, 16);
             this.lblLeaderboard.Name = "lblLeaderboard";
             this.lblLeaderboard.Size = new System.Drawing.Size(188, 32);
@@ -378,6 +380,7 @@ namespace LocalCycleClub
             // 
             // tabProfile
             // 
+            this.tabProfile.BackColor = System.Drawing.Color.Black;
             this.tabProfile.Controls.Add(this.btnDeleteSentence);
             this.tabProfile.Controls.Add(this.lblStartdate);
             this.tabProfile.Controls.Add(this.lblDateStarted);
@@ -398,20 +401,22 @@ namespace LocalCycleClub
             this.tabProfile.Size = new System.Drawing.Size(862, 606);
             this.tabProfile.TabIndex = 3;
             this.tabProfile.Text = "Profile";
-            this.tabProfile.UseVisualStyleBackColor = true;
             // 
             // btnDeleteSentence
             // 
+            this.btnDeleteSentence.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteSentence.Location = new System.Drawing.Point(359, 545);
             this.btnDeleteSentence.Name = "btnDeleteSentence";
             this.btnDeleteSentence.Size = new System.Drawing.Size(97, 47);
             this.btnDeleteSentence.TabIndex = 12;
             this.btnDeleteSentence.Text = "Delete Sentence";
             this.btnDeleteSentence.UseVisualStyleBackColor = true;
+            this.btnDeleteSentence.Click += new System.EventHandler(this.btnDeleteSentence_Click);
             // 
             // lblStartdate
             // 
             this.lblStartdate.AutoSize = true;
+            this.lblStartdate.ForeColor = System.Drawing.Color.SlateGray;
             this.lblStartdate.Location = new System.Drawing.Point(177, 445);
             this.lblStartdate.Name = "lblStartdate";
             this.lblStartdate.Size = new System.Drawing.Size(0, 17);
@@ -420,15 +425,17 @@ namespace LocalCycleClub
             // lblDateStarted
             // 
             this.lblDateStarted.AutoSize = true;
-            this.lblDateStarted.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateStarted.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateStarted.ForeColor = System.Drawing.Color.SlateGray;
             this.lblDateStarted.Location = new System.Drawing.Point(58, 443);
             this.lblDateStarted.Name = "lblDateStarted";
-            this.lblDateStarted.Size = new System.Drawing.Size(89, 18);
+            this.lblDateStarted.Size = new System.Drawing.Size(105, 24);
             this.lblDateStarted.TabIndex = 1;
             this.lblDateStarted.Text = "Start Date:";
             // 
             // btnAddSentence
             // 
+            this.btnAddSentence.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddSentence.Location = new System.Drawing.Point(359, 490);
             this.btnAddSentence.Name = "btnAddSentence";
             this.btnAddSentence.Size = new System.Drawing.Size(97, 47);
@@ -440,19 +447,21 @@ namespace LocalCycleClub
             // lblMotivationalSentence
             // 
             this.lblMotivationalSentence.AutoSize = true;
-            this.lblMotivationalSentence.Font = new System.Drawing.Font("Microsoft Yi Baiti", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMotivationalSentence.Location = new System.Drawing.Point(480, 470);
+            this.lblMotivationalSentence.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMotivationalSentence.ForeColor = System.Drawing.Color.SlateGray;
+            this.lblMotivationalSentence.Location = new System.Drawing.Point(479, 467);
             this.lblMotivationalSentence.Name = "lblMotivationalSentence";
-            this.lblMotivationalSentence.Size = new System.Drawing.Size(158, 17);
+            this.lblMotivationalSentence.Size = new System.Drawing.Size(177, 20);
             this.lblMotivationalSentence.TabIndex = 9;
             this.lblMotivationalSentence.Text = "Motivational Sentence";
             // 
             // txtMotivationalSentence
             // 
+            this.txtMotivationalSentence.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtMotivationalSentence.ForeColor = System.Drawing.Color.SlateGray;
             this.txtMotivationalSentence.Location = new System.Drawing.Point(471, 490);
             this.txtMotivationalSentence.Multiline = true;
             this.txtMotivationalSentence.Name = "txtMotivationalSentence";
-            this.txtMotivationalSentence.ReadOnly = true;
             this.txtMotivationalSentence.Size = new System.Drawing.Size(375, 102);
             this.txtMotivationalSentence.TabIndex = 1;
             // 
@@ -465,6 +474,12 @@ namespace LocalCycleClub
             // 
             // btnAddCycle
             // 
+            this.btnAddCycle.FlatAppearance.BorderColor = System.Drawing.Color.Ivory;
+            this.btnAddCycle.FlatAppearance.BorderSize = 2;
+            this.btnAddCycle.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAddCycle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnAddCycle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCycle.ForeColor = System.Drawing.Color.Black;
             this.btnAddCycle.Location = new System.Drawing.Point(57, 517);
             this.btnAddCycle.Name = "btnAddCycle";
             this.btnAddCycle.Size = new System.Drawing.Size(97, 49);
@@ -475,7 +490,8 @@ namespace LocalCycleClub
             // lblClubRanking
             // 
             this.lblClubRanking.AutoSize = true;
-            this.lblClubRanking.Location = new System.Drawing.Point(177, 401);
+            this.lblClubRanking.ForeColor = System.Drawing.Color.SlateGray;
+            this.lblClubRanking.Location = new System.Drawing.Point(211, 406);
             this.lblClubRanking.Name = "lblClubRanking";
             this.lblClubRanking.Size = new System.Drawing.Size(16, 17);
             this.lblClubRanking.TabIndex = 6;
@@ -484,7 +500,8 @@ namespace LocalCycleClub
             // lblKMCycled
             // 
             this.lblKMCycled.AutoSize = true;
-            this.lblKMCycled.Location = new System.Drawing.Point(211, 353);
+            this.lblKMCycled.ForeColor = System.Drawing.Color.SlateGray;
+            this.lblKMCycled.Location = new System.Drawing.Point(241, 353);
             this.lblKMCycled.Name = "lblKMCycled";
             this.lblKMCycled.Size = new System.Drawing.Size(32, 17);
             this.lblKMCycled.TabIndex = 5;
@@ -493,20 +510,22 @@ namespace LocalCycleClub
             // clubRankinglbl
             // 
             this.clubRankinglbl.AutoSize = true;
-            this.clubRankinglbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clubRankinglbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clubRankinglbl.ForeColor = System.Drawing.Color.SlateGray;
             this.clubRankinglbl.Location = new System.Drawing.Point(54, 399);
             this.clubRankinglbl.Name = "clubRankinglbl";
-            this.clubRankinglbl.Size = new System.Drawing.Size(113, 18);
+            this.clubRankinglbl.Size = new System.Drawing.Size(141, 24);
             this.clubRankinglbl.TabIndex = 4;
             this.clubRankinglbl.Text = "Club Ranking:";
             // 
             // kmCycledlbl
             // 
             this.kmCycledlbl.AutoSize = true;
-            this.kmCycledlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kmCycledlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kmCycledlbl.ForeColor = System.Drawing.Color.SlateGray;
             this.kmCycledlbl.Location = new System.Drawing.Point(58, 353);
             this.kmCycledlbl.Name = "kmCycledlbl";
-            this.kmCycledlbl.Size = new System.Drawing.Size(112, 18);
+            this.kmCycledlbl.Size = new System.Drawing.Size(137, 24);
             this.kmCycledlbl.TabIndex = 3;
             this.kmCycledlbl.Text = "Km\'s Cycled: ";
             // 
@@ -514,6 +533,7 @@ namespace LocalCycleClub
             // 
             this.grpBoxAchievementsUnlckd.Controls.Add(this.achievementsListView);
             this.grpBoxAchievementsUnlckd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpBoxAchievementsUnlckd.ForeColor = System.Drawing.Color.SlateGray;
             this.grpBoxAchievementsUnlckd.Location = new System.Drawing.Point(469, 22);
             this.grpBoxAchievementsUnlckd.Name = "grpBoxAchievementsUnlckd";
             this.grpBoxAchievementsUnlckd.Size = new System.Drawing.Size(380, 300);
@@ -529,9 +549,9 @@ namespace LocalCycleClub
             this.chDateAchieved});
             this.achievementsListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.achievementsListView.HideSelection = false;
-            listViewItem1.Tag = "Oops";
+            listViewItem3.Tag = "Oops";
             this.achievementsListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem3});
             this.achievementsListView.Location = new System.Drawing.Point(3, 20);
             this.achievementsListView.Name = "achievementsListView";
             this.achievementsListView.Size = new System.Drawing.Size(374, 277);
@@ -558,12 +578,14 @@ namespace LocalCycleClub
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(93, 22);
+            this.lblUsername.Font = new System.Drawing.Font("Ravie", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.ForeColor = System.Drawing.Color.SlateGray;
+            this.lblUsername.Location = new System.Drawing.Point(61, 16);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(168, 38);
+            this.lblUsername.Size = new System.Drawing.Size(253, 45);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Username";
+            this.lblUsername.Click += new System.EventHandler(this.lblUsername_Click);
             // 
             // pictureBox2
             // 
@@ -770,6 +792,7 @@ namespace LocalCycleClub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(968, 659);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
