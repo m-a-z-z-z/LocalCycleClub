@@ -137,8 +137,10 @@ namespace LocalCycleClub
         {
             foreach(ListViewItem L in lvLeaderboard.SelectedItems)
             {
+               /* int NoOfCycles = btnAddCycle_Click(sender, e);
+
                 this.txtBoxSUUsername.Text = L.SubItems[0].Text;
-                this.tex
+                 NoOfCycles.ToString = L.SubItems[1].Text;*/
             }
         }
 
@@ -175,7 +177,7 @@ namespace LocalCycleClub
             bool B = btnSubmit_Click( sender,  e);
             if (B == true)
             {
-                Member m1 = new Member(this.txtBoxSUUsername.Text)
+                Member m1 = new Member(this.txtBoxSUUsername.Text);
             }
         }
 
@@ -185,11 +187,24 @@ namespace LocalCycleClub
         //    {
         //        if (txtBoxUsername.Text = member)
         //        {
-        private int btnAddCycle_Click(object sender, EventArgs e)
-        {
-            int btnClicked;
-            btnClicked++;
 
+
+        private  void btnAddCycle_Click(object sender, EventArgs e)
+        {
+           // NumberOFCycles();
+
+        }
+        private int NumberOFCycles(int btnClicked)
+        {
+            btnClicked = 0;
+            btnClicked++;
+            return btnClicked;
+        }
+
+        private void tabSignup_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

@@ -29,7 +29,7 @@ namespace LocalCycleClub
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
             "Caught Cheating",
             "Got caught cheating"}, 0);
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -562,9 +562,9 @@ namespace LocalCycleClub
             this.chDateAchieved});
             this.achievementsListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.achievementsListView.HideSelection = false;
-            listViewItem3.Tag = "Oops";
+            listViewItem4.Tag = "Oops";
             this.achievementsListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3});
+            listViewItem4});
             this.achievementsListView.Location = new System.Drawing.Point(3, 20);
             this.achievementsListView.Name = "achievementsListView";
             this.achievementsListView.Size = new System.Drawing.Size(374, 277);
@@ -636,6 +636,7 @@ namespace LocalCycleClub
             this.tabSignup.Size = new System.Drawing.Size(862, 606);
             this.tabSignup.TabIndex = 4;
             this.tabSignup.Text = "Sign Up";
+            this.tabSignup.Click += new System.EventHandler(this.tabSignup_Click);
             // 
             // label14
             // 
