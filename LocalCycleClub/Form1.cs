@@ -17,17 +17,17 @@ namespace LocalCycleClub
     {
         public List<Achievements> achievements = new List<Achievements>();
         public List<Member> ListOfMembers = new List<Member>();
-        string memberFile = "c:\\membersFile.txt";
+        string memberFile = "membersFile.dat";
 
         public void SetUpData()
         {
             ReadDataFromFile(ref ListOfMembers, memberFile);
            
-            Member m1 = new Member("MazIsDaBest", "Dylan", "Maziarek", "maz@theGOAT.com", "ilikecycling123", new DateTime(31, 08, 1997), "Thurles, Tipperary", "Lance on Steroids Good");
+            Member m1 = new Member("MazIsDaBest", "Dylan", "Maziarek", "maz@theGOAT.com", "ilikecycling123", new DateTime(31, 08, 1997), "Thurles, Tipperary", "Lance on Steroids Good", 100, 1);
             ListOfMembers.Add(m1);
-            Member m2 = new Member("DanIsTrash", "Daniel", "Ruane", "dan@nottheGOAT.com", "password123", new DateTime(20, 04, 2000), "The Shticks, Mayo", "Post Drug Bust Lance");
+            Member m2 = new Member("DanIsTrash", "Daniel", "Ruane", "dan@nottheGOAT.com", "password123", new DateTime(20, 04, 2000), "The Shticks, Mayo", "Post Drug Bust Lance", 10, 1);
             ListOfMembers.Add(m2);
-            Member m3 = new Member("ZebedeeInDaTree", "Ben", "Houghton", "ben@jewmail.com", "BenAndKiana4Life69", new DateTime(31, 08, 1998), "Killaloe, Tipperary", "Lance on Steroids Good");
+            Member m3 = new Member("ZebedeeInDaTree", "Ben", "Houghton", "ben@jewmail.com", "BenAndKiana4Life69", new DateTime(31, 08, 1998), "Killaloe, Tipperary", "Lance on Steroids Good", 10, 1);
             ListOfMembers.Add(m3);
         }
 
