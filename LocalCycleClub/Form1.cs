@@ -17,9 +17,10 @@ namespace LocalCycleClub
     {
         public List<Achievements> achievements = new List<Achievements>();
         public List<Member> ListOfMembers = new List<Member>();
+        public List<Member> LeaderBoard = new List<Member>();
        // string memberFile = "membersFile.dat";
 
-        public void SetUpData()
+       /* public void SetUpData()
         {
             //ReadDataFromFile(ref ListOfMembers, memberFile);
            
@@ -29,7 +30,7 @@ namespace LocalCycleClub
             ListOfMembers.Add(m2);
             Member m3 = new Member("ZebedeeInDaTree", "Ben", "Houghton", "ben@jewmail.com", "BenAndKiana4Life69", new DateTime(31, 08, 1998), "Killaloe, Tipperary", "Lance on Steroids Good");
             ListOfMembers.Add(m3);
-        }
+        }*/
         /*
         public static void ReadDataFromFile(ref List<Member> m, string memberFile)
         {
@@ -90,14 +91,23 @@ namespace LocalCycleClub
             MessageBox.Show("Data written to file");
         }
 */
+
+
         public Form1()
         {
             InitializeComponent();
-            SetUpData();
+            //SetUpData();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+       public void SetUpDataForLeaderBoard()
+        {
+            lvLeaderboard.Items.Clear();
+            /*LeaderBoard.ForEach(user => lvLeaderboard.Items.Add(new ListViewItem(new string[]
+            { user.Username,user.KmCycled,user.NumOfCycled}));*/
         }
 
         private void label5_Click(object sender, EventArgs e)

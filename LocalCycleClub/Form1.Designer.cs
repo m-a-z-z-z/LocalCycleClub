@@ -29,9 +29,10 @@ namespace LocalCycleClub
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "Caught Cheating",
-            "Got caught cheating"}, 0);
+            "Got caught cheating",
+            "28/04/2021"}, 0);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -562,9 +563,9 @@ namespace LocalCycleClub
             this.chDateAchieved});
             this.achievementsListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.achievementsListView.HideSelection = false;
-            listViewItem4.Tag = "Oops";
+            listViewItem1.Tag = "Oops";
             this.achievementsListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
+            listViewItem1});
             this.achievementsListView.Location = new System.Drawing.Point(3, 20);
             this.achievementsListView.Name = "achievementsListView";
             this.achievementsListView.Size = new System.Drawing.Size(374, 277);
@@ -595,7 +596,7 @@ namespace LocalCycleClub
             this.lblUsername.ForeColor = System.Drawing.Color.SlateGray;
             this.lblUsername.Location = new System.Drawing.Point(61, 16);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(253, 45);
+            this.lblUsername.Size = new System.Drawing.Size(247, 44);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Username";
             this.lblUsername.Click += new System.EventHandler(this.lblUsername_Click);
