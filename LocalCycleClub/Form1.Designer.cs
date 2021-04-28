@@ -120,6 +120,7 @@ namespace LocalCycleClub
             this.tabControl1.Controls.Add(this.tabLeaderboard);
             this.tabControl1.Controls.Add(this.tabProfile);
             this.tabControl1.Controls.Add(this.tabSignup);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -128,6 +129,7 @@ namespace LocalCycleClub
             // 
             // tabHome
             // 
+            this.tabHome.BackColor = System.Drawing.Color.Black;
             this.tabHome.Controls.Add(this.pictureBox1);
             this.tabHome.Controls.Add(this.heroOfTheMonthLbl);
             this.tabHome.Controls.Add(this.groupBoxLogin);
@@ -139,7 +141,6 @@ namespace LocalCycleClub
             this.tabHome.Size = new System.Drawing.Size(862, 606);
             this.tabHome.TabIndex = 0;
             this.tabHome.Text = "Home";
-            this.tabHome.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -153,12 +154,13 @@ namespace LocalCycleClub
             // heroOfTheMonthLbl
             // 
             this.heroOfTheMonthLbl.AutoSize = true;
-            this.heroOfTheMonthLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.heroOfTheMonthLbl.Location = new System.Drawing.Point(645, 398);
+            this.heroOfTheMonthLbl.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.heroOfTheMonthLbl.ForeColor = System.Drawing.Color.SlateGray;
+            this.heroOfTheMonthLbl.Location = new System.Drawing.Point(633, 399);
             this.heroOfTheMonthLbl.Name = "heroOfTheMonthLbl";
-            this.heroOfTheMonthLbl.Size = new System.Drawing.Size(169, 72);
+            this.heroOfTheMonthLbl.Size = new System.Drawing.Size(229, 84);
             this.heroOfTheMonthLbl.TabIndex = 4;
-            this.heroOfTheMonthLbl.Text = "Hero of the \r\n    Month";
+            this.heroOfTheMonthLbl.Text = "Hero of The \r\n    Month";
             // 
             // groupBoxLogin
             // 
@@ -168,6 +170,8 @@ namespace LocalCycleClub
             this.groupBoxLogin.Controls.Add(this.txtBoxUsername);
             this.groupBoxLogin.Controls.Add(this.passwordLoginLbl);
             this.groupBoxLogin.Controls.Add(this.userNameLoginLbl);
+            this.groupBoxLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxLogin.ForeColor = System.Drawing.Color.SlateGray;
             this.groupBoxLogin.Location = new System.Drawing.Point(403, 56);
             this.groupBoxLogin.Name = "groupBoxLogin";
             this.groupBoxLogin.Size = new System.Drawing.Size(350, 170);
@@ -177,6 +181,7 @@ namespace LocalCycleClub
             // 
             // btnForgotPassword
             // 
+            this.btnForgotPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnForgotPassword.Location = new System.Drawing.Point(174, 118);
             this.btnForgotPassword.Name = "btnForgotPassword";
             this.btnForgotPassword.Size = new System.Drawing.Size(141, 29);
@@ -186,6 +191,7 @@ namespace LocalCycleClub
             // 
             // btnLogin
             // 
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Location = new System.Drawing.Point(93, 118);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 29);
@@ -211,6 +217,7 @@ namespace LocalCycleClub
             // 
             this.passwordLoginLbl.AutoSize = true;
             this.passwordLoginLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLoginLbl.ForeColor = System.Drawing.Color.SlateGray;
             this.passwordLoginLbl.Location = new System.Drawing.Point(20, 78);
             this.passwordLoginLbl.Name = "passwordLoginLbl";
             this.passwordLoginLbl.Size = new System.Drawing.Size(98, 25);
@@ -222,6 +229,7 @@ namespace LocalCycleClub
             this.userNameLoginLbl.AccessibleDescription = "";
             this.userNameLoginLbl.AutoSize = true;
             this.userNameLoginLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userNameLoginLbl.ForeColor = System.Drawing.Color.SlateGray;
             this.userNameLoginLbl.Location = new System.Drawing.Point(20, 38);
             this.userNameLoginLbl.Name = "userNameLoginLbl";
             this.userNameLoginLbl.Size = new System.Drawing.Size(102, 25);
@@ -230,6 +238,9 @@ namespace LocalCycleClub
             // 
             // txtBoxAnnouncements
             // 
+            this.txtBoxAnnouncements.BackColor = System.Drawing.Color.Black;
+            this.txtBoxAnnouncements.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxAnnouncements.ForeColor = System.Drawing.Color.SlateGray;
             this.txtBoxAnnouncements.Location = new System.Drawing.Point(34, 56);
             this.txtBoxAnnouncements.Name = "txtBoxAnnouncements";
             this.txtBoxAnnouncements.Size = new System.Drawing.Size(330, 437);
@@ -240,6 +251,7 @@ namespace LocalCycleClub
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.SlateGray;
             this.label1.Location = new System.Drawing.Point(43, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(253, 38);
@@ -493,7 +505,7 @@ namespace LocalCycleClub
             this.lblClubRanking.ForeColor = System.Drawing.Color.SlateGray;
             this.lblClubRanking.Location = new System.Drawing.Point(211, 406);
             this.lblClubRanking.Name = "lblClubRanking";
-            this.lblClubRanking.Size = new System.Drawing.Size(16, 17);
+            this.lblClubRanking.Size = new System.Drawing.Size(17, 17);
             this.lblClubRanking.TabIndex = 6;
             this.lblClubRanking.Text = "0";
             // 
@@ -503,7 +515,7 @@ namespace LocalCycleClub
             this.lblKMCycled.ForeColor = System.Drawing.Color.SlateGray;
             this.lblKMCycled.Location = new System.Drawing.Point(241, 353);
             this.lblKMCycled.Name = "lblKMCycled";
-            this.lblKMCycled.Size = new System.Drawing.Size(32, 17);
+            this.lblKMCycled.Size = new System.Drawing.Size(35, 17);
             this.lblKMCycled.TabIndex = 5;
             this.lblKMCycled.Text = " Km";
             // 

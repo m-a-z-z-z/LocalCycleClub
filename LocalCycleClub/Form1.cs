@@ -19,9 +19,9 @@ namespace LocalCycleClub
         public List<Member> ListOfMembers = new List<Member>();
        // string memberFile = "membersFile.dat";
 
-        /*public void SetUpData()
+        public void SetUpData()
         {
-            ReadDataFromFile(ref ListOfMembers, memberFile);
+            //ReadDataFromFile(ref ListOfMembers, memberFile);
            
             Member m1 = new Member("MazIsDaBest", "Dylan", "Maziarek", "maz@theGOAT.com", "ilikecycling123", new DateTime(31, 08, 1997), "Thurles, Tipperary", "Lance on Steroids Good");
             ListOfMembers.Add(m1);
@@ -30,7 +30,7 @@ namespace LocalCycleClub
             Member m3 = new Member("ZebedeeInDaTree", "Ben", "Houghton", "ben@jewmail.com", "BenAndKiana4Life69", new DateTime(31, 08, 1998), "Killaloe, Tipperary", "Lance on Steroids Good");
             ListOfMembers.Add(m3);
         }
-
+        /*
         public static void ReadDataFromFile(ref List<Member> m, string memberFile)
         {
             List<Member> temp = new List<Member>();
@@ -93,7 +93,7 @@ namespace LocalCycleClub
         public Form1()
         {
             InitializeComponent();
-            //SetUpData();
+            SetUpData();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -135,7 +135,11 @@ namespace LocalCycleClub
 
         private void lvLeaderboard_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            foreach(ListViewItem L in lvLeaderboard.SelectedItems)
+            {
+                this.txtBoxSUUsername.Text = L.SubItems[0].Text;
+                this.tex
+            }
         }
 
         private void achievementsListView_SelectedIndexChanged(object sender, EventArgs e)
@@ -171,8 +175,10 @@ namespace LocalCycleClub
             bool B = btnSubmit_Click( sender,  e);
             if (B == true)
             {
-                Member m1 = new Member(this.txtBoxSUUsername.Text)=lblUsername.Text
+                Member m1 = new Member(this.txtBoxSUUsername.Text)
             }
         }
+
+
     }
 }
