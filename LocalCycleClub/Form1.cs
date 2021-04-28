@@ -179,12 +179,17 @@ namespace LocalCycleClub
             }
         }
 
+        //private void btnLogin_Click(object sender, EventArgs e)
+        //{
+        //    foreach (Member member in ListOfMembers)
+        //    {
+        //        if (txtBoxUsername.Text = member)
+        //        {
         private int btnAddCycle_Click(object sender, EventArgs e)
         {
             int btnClicked;
             btnClicked++;
 
-            return btnClicked;
-        }
     }
+
 }
