@@ -179,6 +179,12 @@ namespace LocalCycleClub
             }
         }
 
+        private int btnAddCycle_Click(object sender, EventArgs e)
+        {
+            int btnClicked;
+            btnClicked++;
 
+            return btnClicked;
+        }
     }
 }
