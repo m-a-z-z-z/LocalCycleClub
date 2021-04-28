@@ -111,7 +111,7 @@ namespace LocalCycleClub
             info.Show();
         }
 
-        private void btnSubmit_Click(object sender, EventArgs e)
+        private Boolean btnSubmit_Click(object sender, EventArgs e)
         {
             string username, fname, lname, email, pass, address, exp;
             DateTime dob;
@@ -125,6 +125,7 @@ namespace LocalCycleClub
             exp = cyclingXPBox.Text;
 
             AddMember(username, fname, lname, email, pass, dob, address, exp);
+            return true;
         }
 
         private void AddMember(String UserName, String FirstName, String LastName, String Email, String PassWord, DateTime DoB, String Address, String CyclingXP)
@@ -151,7 +152,6 @@ namespace LocalCycleClub
             }
             else
             {
-                // I also need to update the list in the program
                 achievements.Add(new Achievements(this.txtMotivationalSentence.Text));
 
                 btnAddSentence.Text = "Add Sentence";
@@ -168,8 +168,11 @@ namespace LocalCycleClub
 
         private void lblUsername_Click(object sender, EventArgs e)
         {
-            btnSubmit_Click == false;
-            if (btnSubmit.Click==true)
+            bool B = btnSubmit_Click( sender,  e);
+            if (B == true)
+            {
+                Member m1 = new Member(this.txtBoxSUUsername.Text)=lblUsername.Text
+            }
         }
     }
 }
