@@ -15,6 +15,7 @@ namespace LocalCycleClub
 {
     public partial class Form1 : Form
     {
+        public List<Achievements> achievements = new List<Achievements>();
         public List<Member> ListOfMembers = new List<Member>();
         string memberFile = "c:\\membersFile.txt";
 
@@ -22,11 +23,11 @@ namespace LocalCycleClub
         {
             ReadDataFromFile(ref ListOfMembers, memberFile);
            
-            Member m1 = new Member("MazIsDaBest", "Dylan", "Maziarek", "maz@theGOAT.com", "ilikecycling123", new DateTime(31, 08, 1997), "Thurles, Tipperary", "Lance on Steroids Good",10,1);
+            Member m1 = new Member("MazIsDaBest", "Dylan", "Maziarek", "maz@theGOAT.com", "ilikecycling123", new DateTime(31, 08, 1997), "Thurles, Tipperary", "Lance on Steroids Good");
             ListOfMembers.Add(m1);
-            Member m2 = new Member("DanIsTrash", "Daniel", "Ruane", "dan@nottheGOAT.com", "password123", new DateTime(20, 04, 2000), "The Shticks, Mayo", "Post Drug Bust Lance",10,1);
+            Member m2 = new Member("DanIsTrash", "Daniel", "Ruane", "dan@nottheGOAT.com", "password123", new DateTime(20, 04, 2000), "The Shticks, Mayo", "Post Drug Bust Lance");
             ListOfMembers.Add(m2);
-            Member m3 = new Member("ZebedeeInDaTree", "Ben", "Houghton", "ben@jewmail.com", "BenAndKiana4Life69", new DateTime(31, 08, 1998), "Killaloe, Tipperary", "Lance on Steroids Good",10,1);
+            Member m3 = new Member("ZebedeeInDaTree", "Ben", "Houghton", "ben@jewmail.com", "BenAndKiana4Life69", new DateTime(31, 08, 1998), "Killaloe, Tipperary", "Lance on Steroids Good");
             ListOfMembers.Add(m3);
         }
 
@@ -139,6 +140,24 @@ namespace LocalCycleClub
         private void achievementsListView_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAddSentence_Click(object sender, EventArgs e)
+        {
+            if (btnAddSentence.Text == "Add Sentence")
+            {
+                btnAddSentence.Text = "Save";
+                this.txtMotivationalSentence.Enabled = true;
+            }
+            else
+            {
+                // I also need to update the list in the program
+                achievements.Add(new Achievements(this.txtMotivationalSentence.Text));
+
+                btnAddSentence.Text = "Add Sentence";
+                this.txtMotivationalSentence.Enabled = false;
+            
+            }
         }
     }
 }

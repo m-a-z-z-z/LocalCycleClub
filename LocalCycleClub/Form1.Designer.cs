@@ -61,10 +61,12 @@ namespace LocalCycleClub
             this.DistanceCycled = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblLeaderboard = new System.Windows.Forms.Label();
             this.tabProfile = new System.Windows.Forms.TabPage();
+            this.btnDeleteSentence = new System.Windows.Forms.Button();
+            this.lblStartdate = new System.Windows.Forms.Label();
             this.lblDateStarted = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAddSentence = new System.Windows.Forms.Button();
             this.lblMotivationalSentence = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtMotivationalSentence = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnAddCycle = new System.Windows.Forms.Button();
             this.lblClubRanking = new System.Windows.Forms.Label();
@@ -98,7 +100,6 @@ namespace LocalCycleClub
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.lblStartdate = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -377,11 +378,12 @@ namespace LocalCycleClub
             // 
             // tabProfile
             // 
+            this.tabProfile.Controls.Add(this.btnDeleteSentence);
             this.tabProfile.Controls.Add(this.lblStartdate);
             this.tabProfile.Controls.Add(this.lblDateStarted);
-            this.tabProfile.Controls.Add(this.button1);
+            this.tabProfile.Controls.Add(this.btnAddSentence);
             this.tabProfile.Controls.Add(this.lblMotivationalSentence);
-            this.tabProfile.Controls.Add(this.textBox2);
+            this.tabProfile.Controls.Add(this.txtMotivationalSentence);
             this.tabProfile.Controls.Add(this.textBox1);
             this.tabProfile.Controls.Add(this.btnAddCycle);
             this.tabProfile.Controls.Add(this.lblClubRanking);
@@ -398,6 +400,23 @@ namespace LocalCycleClub
             this.tabProfile.Text = "Profile";
             this.tabProfile.UseVisualStyleBackColor = true;
             // 
+            // btnDeleteSentence
+            // 
+            this.btnDeleteSentence.Location = new System.Drawing.Point(359, 545);
+            this.btnDeleteSentence.Name = "btnDeleteSentence";
+            this.btnDeleteSentence.Size = new System.Drawing.Size(97, 47);
+            this.btnDeleteSentence.TabIndex = 12;
+            this.btnDeleteSentence.Text = "Delete Sentence";
+            this.btnDeleteSentence.UseVisualStyleBackColor = true;
+            // 
+            // lblStartdate
+            // 
+            this.lblStartdate.AutoSize = true;
+            this.lblStartdate.Location = new System.Drawing.Point(177, 445);
+            this.lblStartdate.Name = "lblStartdate";
+            this.lblStartdate.Size = new System.Drawing.Size(0, 17);
+            this.lblStartdate.TabIndex = 11;
+            // 
             // lblDateStarted
             // 
             this.lblDateStarted.AutoSize = true;
@@ -408,14 +427,15 @@ namespace LocalCycleClub
             this.lblDateStarted.TabIndex = 1;
             this.lblDateStarted.Text = "Start Date:";
             // 
-            // button1
+            // btnAddSentence
             // 
-            this.button1.Location = new System.Drawing.Point(353, 517);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 49);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Add Sentence";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAddSentence.Location = new System.Drawing.Point(359, 490);
+            this.btnAddSentence.Name = "btnAddSentence";
+            this.btnAddSentence.Size = new System.Drawing.Size(97, 47);
+            this.btnAddSentence.TabIndex = 10;
+            this.btnAddSentence.Text = "Add Sentence";
+            this.btnAddSentence.UseVisualStyleBackColor = true;
+            this.btnAddSentence.Click += new System.EventHandler(this.btnAddSentence_Click);
             // 
             // lblMotivationalSentence
             // 
@@ -427,14 +447,14 @@ namespace LocalCycleClub
             this.lblMotivationalSentence.TabIndex = 9;
             this.lblMotivationalSentence.Text = "Motivational Sentence";
             // 
-            // textBox2
+            // txtMotivationalSentence
             // 
-            this.textBox2.Location = new System.Drawing.Point(471, 490);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(375, 76);
-            this.textBox2.TabIndex = 1;
+            this.txtMotivationalSentence.Location = new System.Drawing.Point(471, 490);
+            this.txtMotivationalSentence.Multiline = true;
+            this.txtMotivationalSentence.Name = "txtMotivationalSentence";
+            this.txtMotivationalSentence.ReadOnly = true;
+            this.txtMotivationalSentence.Size = new System.Drawing.Size(375, 102);
+            this.txtMotivationalSentence.TabIndex = 1;
             // 
             // textBox1
             // 
@@ -746,14 +766,6 @@ namespace LocalCycleClub
             this.label6.TabIndex = 0;
             this.label6.Text = "Username";
             // 
-            // lblStartdate
-            // 
-            this.lblStartdate.AutoSize = true;
-            this.lblStartdate.Location = new System.Drawing.Point(177, 445);
-            this.lblStartdate.Name = "lblStartdate";
-            this.lblStartdate.Size = new System.Drawing.Size(0, 17);
-            this.lblStartdate.TabIndex = 11;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -847,13 +859,14 @@ namespace LocalCycleClub
         private System.Windows.Forms.Button btnAddCycle;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblMotivationalSentence;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtMotivationalSentence;
+        private System.Windows.Forms.Button btnAddSentence;
         private System.Windows.Forms.Label lblDateStarted;
         private System.Windows.Forms.ColumnHeader chMilestone;
         private System.Windows.Forms.ColumnHeader chDescription;
         private System.Windows.Forms.ColumnHeader chDateAchieved;
         private System.Windows.Forms.Label lblStartdate;
+        private System.Windows.Forms.Button btnDeleteSentence;
     }
 }
 

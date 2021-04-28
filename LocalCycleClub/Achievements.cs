@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LocalCycleClub
 {
-    class Achievements
+    public class Achievements
     {
         List<string> Milestones { get; set; }
         DateTime DateAcheived { get; set; }
@@ -28,6 +28,11 @@ namespace LocalCycleClub
             this.ClubRank = clubRank;
             this.MotivationSentence = motivation;
             this.DateStarted = dateStarted;
+        }
+
+        public Achievements(string motivation)
+        {
+            this.MotivationSentence = motivation;
         }
 
     }
